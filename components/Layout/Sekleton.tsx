@@ -80,8 +80,7 @@ function Header({
             invert={invert}
             filled={logoHovered}
           /> */}
-          <Image width={132} height={32} alt='mainLogo'  src={expanded ? 'WhiteLogo.svg' : 'MainLogo.svg'}
-/>
+          <Image width={132} height={32} alt='mainLogo'  src={expanded ? 'WhiteLogo.svg' : 'MainLogo.svg'}/>
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href="/contact" invert={invert}>

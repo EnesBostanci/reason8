@@ -14,7 +14,7 @@ import Blog from "@/components/UI/Blog"
 
 export default function page() {
   return (
-    <Sekleton >
+    <Sekleton>
       <Hero/>
       <Introduction/>
       <Focus/>
