@@ -5,26 +5,21 @@ export default function Global() {
           <div className="max-w-4xl">
             <p className="text-base/7 font-semibold text-indigo-600">About us</p>
             <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-              On a mission to empower remote teams
+            Global Presence
             </h1>
             <p className="mt-6 text-xl/8 text-balance text-gray-700">
-              Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget
-              aliquam. Quisque id at vitae feugiat egestas.
+            SPANNING CONTINENTS, UNITING CULTURES
             </p>
           </div>
           <section className="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
             <div className="lg:pr-8">
               <h2 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900">Our mission</h2>
               <p className="mt-6 text-base/7 text-gray-600">
-                Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
-                vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque
-                erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper
-                sed amet vitae sed turpis id.
-              </p>
-              <p className="mt-8 text-base/7 text-gray-600">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
-                fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
-                adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
+              Reson8 Media transcends geographical boundaries, 
+              boasting a vibrant presence in Canada, Turkey, Qatar, and the UAE. 
+              Our global footprint underscores the expertise of our founding team and our commitment to elevating media projects beyond conventional limits. 
+              This extensive network is a testament to our ability to deliver extraordinary solutions worldwide, 
+              making Reson8 a truly international brand in the realm of creative media services.
               </p>
             </div>
             <div className="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto">

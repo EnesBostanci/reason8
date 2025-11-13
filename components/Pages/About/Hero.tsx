@@ -87,31 +87,25 @@ export default function Hero() {
   
     return (
       <section>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro eyebrow="About us" title="Reson8 Media">
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+        Emerged As A Leading Creative Force In The Broadcast And Digital Media Domain, 
+        Specializing In Real-Time Creative Services
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
-          </p>
-          <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+          Since its inception, we have paved the path for innovation and engagement, 
+          transforming the way media experiences are curated and consumed. 
+          From data-driven graphics to channel branding and template creation, 
+          our journey has been defined by our commitment to excellence and our drive to redefine the standards of the media industry.
           </p>
         </div>
       </PageIntro>
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
+          <StatListItem value="350+" label="paid employees" />
+          <StatListItem value="10K" label="Placated clients" />
+          <StatListItem value="1.2K" label="Invoices billed" />
         </StatList>
       </Container>
       </section>

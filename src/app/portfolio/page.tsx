@@ -6,7 +6,7 @@ import Features from "@/components/Pages/Portfolio/Features";
 import Hero from "@/components/Pages/Portfolio/Hero";
 export default function page() {
   return (
-    <Sekleton>
+    <Sekleton grid={true}>
       <Hero/>
       <Features/>
       <BentoGrid/>

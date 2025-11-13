@@ -5,6 +5,7 @@ import { FadeIn } from '@/components/Layout/FadeIn'
 import { Logo } from '@/components/UI/SekletonCom/Logo'
 import { socialMediaProfiles } from '@/components/UI/SekletonCom/SocialMedia'
 
+
 const navigation = [
   {
     title: 'Work',
@@ -25,10 +26,10 @@ const navigation = [
   {
     title: 'Company',
     links: [
-      { title: 'About', href: '/about' },
-      { title: 'Process', href: '/process' },
-      { title: 'Blog', href: '/blog' },
-      { title: 'Contact us', href: '/contact' },
+      { title: 'About Us', href: '/aboutus' },
+      { title: 'Services', href: '/services' },
+      { title: 'Products', href: '/products' },
+      { title: 'Our Work', href: '/portfolio' },
     ],
   },
   {

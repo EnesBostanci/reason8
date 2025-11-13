@@ -11,7 +11,7 @@ import { Sekleton } from "@/components/Layout/Sekleton";
   
 export default function page() {
   return (
-    <Sekleton>
+    <Sekleton grid={true}>
           <Hero/>
           <Culture/>
           <Global/>

@@ -1,5 +1,51 @@
-import { AppStoreLink } from '@/components/UI/CallToActionCom/AppStoreLink'
-import { CircleBackground } from '@/components/UI/CallToActionCom/CircleBackground'
+import {Button} from '@/components/UI/SekletonCom/Button'
+import { useId } from 'react'
+
+function CircleBackground({
+  color,
+  ...props
+}: React.ComponentPropsWithoutRef<'svg'> & {
+  color: string
+}) {
+  let id = useId()
+
+  return (
+    <svg
+      viewBox="0 0 558 558"
+      width="558"
+      height="558"
+      fill="none"
+      aria-hidden="true"
+      {...props}
+    >
+      <defs>
+        <linearGradient
+          id={id}
+          x1="79"
+          y1="16"
+          x2="105"
+          y2="237"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor={color} />
+          <stop offset="1" stopColor={color} stopOpacity="0" />
+        </linearGradient>
+      </defs>
+      <path
+        opacity=".2"
+        d="M1 279C1 125.465 125.465 1 279 1s278 124.465 278 278-124.465 278-278 278S1 432.535 1 279Z"
+        stroke={color}
+      />
+      <path
+        d="M1 279C1 125.465 125.465 1 279 1"
+        stroke={`url(#${id})`}
+        strokeLinecap="round"
+      />
+    </svg>
+  )
+}
+
+
 
 export default function CallToAction() {
   return (
@@ -21,8 +67,10 @@ export default function CallToAction() {
             first investment.
           </p>
           <div className="mt-8 flex justify-center gap-5">
-            <AppStoreLink color="white" />
-            <AppStoreLink color="white" />
+
+            <Button href="/contact" className="bg-white text-gray-900 hover:bg-gray-50 rounded-lg transition-colors " invert>Contact Us</Button>
+            <Button href="/aboutus" className="rounded-lg transition-colors bg-white text-gray-900 hover:bg-gray-50 " invert>Learn More</Button>
+
           </div>
         </div>
       </div>

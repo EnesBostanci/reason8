@@ -17,8 +17,7 @@ const clients = [
   ['Al Ghad TV', logoAlGhadTv],
   ['ANews TV', logoANewsTv],
   ['Abu Dhabi Media Network', logoAbuDhabiMediaNetwork],
-  ['Fivefold', logoFivefold],
-  ['Fivefold', logoFivefold],
+  ['Fivefold', logoFivefold]
 ]
 
 export default function Clients() {

@@ -7,6 +7,12 @@ import { StylizedImage } from '@/components/Layout/StylizedImage'
 import { Offices } from '@/components/UI/SekletonCom/Offices'
 
 
+const servicesData=[
+  {imgUrl:'/Services/01.jpg',dir:true},
+  {imgUrl:'/Services/02.jpg',dir:false},
+  {imgUrl:'/Services/03.jpg',dir:true},
+  {imgUrl:'/Services/04.jpg',dir:false},
+]
 
 export default function Services() {
     return (
@@ -25,11 +31,11 @@ export default function Services() {
           <div className="lg:flex lg:items-center lg:justify-end">
             <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
               <FadeIn className="w-135 flex-none lg:w-180">
-                <StylizedImage
-                  src={''}
+                {/* <StylizedImage
+                  src={'/Services/01.jpg'}
                   sizes="(min-width: 1024px) 41rem, 31rem"
                   className="justify-center lg:justify-end"
-                />
+                /> */}
               </FadeIn>
             </div>
             <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-132 lg:pl-4">

@@ -10,6 +10,7 @@ import { Sekleton } from "@/components/Layout/Sekleton";
 
 
 
+
 export default function page() {
   return (
     <Sekleton>

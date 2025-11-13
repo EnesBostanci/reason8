@@ -143,18 +143,18 @@ function Navigation() {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/work">Our Work</NavigationItem>
-        <NavigationItem href="/about">About Us</NavigationItem>
+        <NavigationItem href="/aboutus">About Us</NavigationItem>
+        <NavigationItem href="/services">Services</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/process">Our Process</NavigationItem>
-        <NavigationItem href="/blog">Blog</NavigationItem>
+        <NavigationItem href="/products">Products</NavigationItem>
+        <NavigationItem href="/portfolio">Our Work</NavigationItem>
       </NavigationRow>
     </nav>
   )
 }
 
-function RootLayoutInner({ children }: { children: React.ReactNode }) {
+function RootLayoutInner({ children , grid=false}: { children: React.ReactNode,grid?:boolean }) {
   let panelId = useId()
   let [expanded, setExpanded] = useState(false)
   let [isTransitioning, setIsTransitioning] = useState(false)
@@ -268,11 +268,11 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           layout
           className="relative isolate flex w-full flex-col pt-9"
         >
-          <GridPattern
+          {grid && <GridPattern
             className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-neutral-50 stroke-neutral-950/5"
             yOffset={-96}
             interactive
-          />
+          />}
 
           <main className="w-full flex-auto">{children}</main>
 
@@ -283,13 +283,13 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
   )
 }
 
-export function Sekleton({ children }: { children: React.ReactNode }) {
+export function Sekleton({ children , grid=false}: { children: React.ReactNode,grid?:boolean }) {
   let pathname = usePathname()
   let [logoHovered, setLogoHovered] = useState(false)
 
   return (
     <RootLayoutContext.Provider value={{ logoHovered, setLogoHovered }}>
-      <RootLayoutInner key={pathname}>{children}</RootLayoutInner>
+      <RootLayoutInner key={pathname} grid={grid}>{children}</RootLayoutInner>
     </RootLayoutContext.Provider>
   )
 }
