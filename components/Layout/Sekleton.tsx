@@ -20,6 +20,7 @@ import { GridPattern } from '@/components/UI/SekletonCom//GridPattern'
 import { Logo, Logomark } from '@/components/UI/SekletonCom//Logo'
 import { Offices } from '@/components/UI/SekletonCom//Offices'
 import { SocialMedia } from '@/components/UI/SekletonCom//SocialMedia'
+import Image from 'next/image'
 
 const RootLayoutContext = createContext<{
   logoHovered: boolean
@@ -69,7 +70,7 @@ function Header({
           onMouseEnter={() => setLogoHovered(true)}
           onMouseLeave={() => setLogoHovered(false)}
         >
-          <Logomark
+          {/* <Logomark
             className="h-8 sm:hidden"
             invert={invert}
             filled={logoHovered}
@@ -78,7 +79,9 @@ function Header({
             className="hidden h-8 sm:block"
             invert={invert}
             filled={logoHovered}
-          />
+          /> */}
+          <Image width={132} height={32} alt='mainLogo'  src={expanded ? 'WhiteLogo.svg' : 'MainLogo.svg'}
+/>
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href="/contact" invert={invert}>

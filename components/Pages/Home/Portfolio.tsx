@@ -111,6 +111,9 @@ const posts = [
                       <p className="text-gray-600">{post.author.role}</p>
                     </div>
                   </div>
+                  <div className="flex  justify-end ">
+                    <button className="text-black text-lg hover:bg-gray-50 rounded-lg transition-colors  px-4 py-1.5  font-semibold bg-white  ">See More</button>
+                  </div>
                 </div>
               </article>
             ))}

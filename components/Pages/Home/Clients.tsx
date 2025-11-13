@@ -2,22 +2,24 @@ import { Container } from '@/components/UI/SekletonCom/Container'
 import { FadeIn, FadeInStagger } from '@/components/Layout/FadeIn'
 import Image from 'next/image'
 
-import logoAbuDhabiMediaNetwork from '@/public/clients/Abu Dhabi Media Network@3x.png'
-import logoAlGhadTv from '@/public/clients/Al Ghad TV.png'
-import logoAlArabiya from '@/public/clients/Al-Arabiya_new_logo.svg'
-import logoAljazeera from '@/public/clients/Aljazeera.svg'
-import logoAljazeeraMark from '@/public/clients/Aljazeera Logo mark.svg'
-import logoANewsTv from '@/public/clients/ANews TV@3x.png'
-import logoFivefold from '@/public/clients/Fivefold@3x.png'
+import logoAbuDhabi from '@/public/clients/abuDhabi.png'
+import logoAlArabiya from '@/public/clients/alarabiya.png'
+import logoAlGad from '@/public/clients/algad.png'
+import logoANewz from '@/public/clients/anewz.png'
+import logoFivefold from '@/public/clients/fivefold.png'
+import logoJazeera from '@/public/clients/jazeera.png'
+import logoMediaCity from '@/public/clients/mediaCity.png'
+import logoShura from '@/public/clients/shura.png'
 
 const clients = [
-  ['Aljazeera', logoAljazeera],
-  ['Aljazeera Mark', logoAljazeeraMark],
-  ['Al-Arabiya', logoAlArabiya],
-  ['Al Ghad TV', logoAlGhadTv],
-  ['ANews TV', logoANewsTv],
-  ['Abu Dhabi Media Network', logoAbuDhabiMediaNetwork],
-  ['Fivefold', logoFivefold]
+  ['Abu Dhabi', logoAbuDhabi],
+  ['Al Arabiya', logoAlArabiya],
+  ['Al Gad', logoAlGad],
+  ['ANewz', logoANewz],
+  ['Fivefold', logoFivefold],
+  ['Jazeera', logoJazeera],
+  ['Media City', logoMediaCity],
+  ['Shura', logoShura],
 ]
 
 export default function Clients() {
@@ -35,10 +37,10 @@ export default function Clients() {
               role="list"
               className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
             >
-              {clients.map(([client, logo]) => (
+              {clients.map(([client, logo],id) => (
                 <li key={client}>
                   <FadeIn>
-                    <Image src={logo} alt={client} unoptimized />
+                    <Image width={185} height={36} src={logo} alt={client} unoptimized />
                   </FadeIn>
                 </li>
               ))}

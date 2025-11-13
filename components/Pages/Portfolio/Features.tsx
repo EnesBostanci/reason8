@@ -1,13 +1,6 @@
 import { Fragment } from 'react'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
-import Hero from "@/components/Pages/Portfolio/ShowCases/Hero"
-import Introduction from "@/components/Pages/Portfolio/ShowCases/Introduction"
-import Focus from "@/components/Pages/Portfolio/CaseStudies/Focus"
-import Help from "@/components/Pages/Portfolio/CaseStudies/Help"
-import People from "@/components/Pages/Portfolio/CaseStudies/People"
-import Art from "@/components/Pages/Portfolio/Blogs/Art"
-import Challenges from "@/components/Pages/Portfolio/Blogs/Challenges"
-import Project from "@/components/Pages/Portfolio/Blogs/Project"
+
 
 
 const tabs = [
@@ -54,15 +47,6 @@ const tabs = [
 export default function Features() {
   return (
     <div className="bg-white">
-      <Hero/>
-      <Introduction/>
-      <Focus/>
-      <Challenges/>
-      <Art/>
-      <Project/>
-      <People/>
-      <Help/>
-
       <section aria-labelledby="features-heading" className="mx-auto max-w-7xl py-32 sm:px-2 lg:px-8">
         <div className="mx-auto max-w-2xl px-4 lg:max-w-none lg:px-0">
           <div className="max-w-3xl">

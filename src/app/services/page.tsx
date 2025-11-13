@@ -1,4 +1,5 @@
 import Blog from "@/components/UI/Blog"
+import Hero from "@/components/Layout/Hero"
 import CallToAction from "@/components/UI/CallToAction"
 import Content from "@/components/Pages/Services/Content"
 import { Sekleton } from "@/components/Layout/Sekleton";
@@ -16,13 +17,15 @@ const servicesData=[
 
 export default function page() {
   return (
+    
     <Sekleton grid={true}>
-      {servicesData.map((c,id)=>(
+      <Hero/>
+
+      {
+        servicesData.map((c,id)=>(
         <Content key={id} imgUrl={c.imgUrl} dir={c.dir}/>
       ))
-        
       }
-      
       <CallToAction/>
       <Blog/>
     </Sekleton>

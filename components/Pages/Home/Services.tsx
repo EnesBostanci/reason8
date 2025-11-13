@@ -1,3 +1,4 @@
+'use client'
 import {FadeIn } from "@/components/Layout/FadeIn"
 import { Button } from '@/components/UI/SekletonCom/Button'
 import { Container } from '@/components/UI/SekletonCom/Container'
@@ -5,14 +6,14 @@ import { List, ListItem } from '@/components/Layout/List'
 import { SectionIntro } from '@/components/Layout/SectionIntro'
 import { StylizedImage } from '@/components/Layout/StylizedImage'
 import { Offices } from '@/components/UI/SekletonCom/Offices'
+import service1  from '@/public/Services/01.jpg'
+import service2  from '@/public/Services/02.jpg'
+import service3  from '@/public/Services/03.jpg'
+import service4  from '@/public/Services/04.jpg'
+import service5  from '@/public/Services/05.jpg'
 
 
-const servicesData=[
-  {imgUrl:'/Services/01.jpg',dir:true},
-  {imgUrl:'/Services/02.jpg',dir:false},
-  {imgUrl:'/Services/03.jpg',dir:true},
-  {imgUrl:'/Services/04.jpg',dir:false},
-]
+
 
 export default function Services() {
     return (
@@ -31,11 +32,11 @@ export default function Services() {
           <div className="lg:flex lg:items-center lg:justify-end">
             <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
               <FadeIn className="w-135 flex-none lg:w-180">
-                {/* <StylizedImage
-                  src={'/Services/01.jpg'}
+                <StylizedImage
+                  src={service1}
                   sizes="(min-width: 1024px) 41rem, 31rem"
                   className="justify-center lg:justify-end"
-                /> */}
+                />
               </FadeIn>
             </div>
             <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-132 lg:pl-4">
