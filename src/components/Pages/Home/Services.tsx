@@ -11,14 +11,37 @@ import service2  from '@/../public/Services/02.jpg'
 import service3  from '@/../public/Services/03.jpg'
 import service4  from '@/../public/Services/04.jpg'
 import service5  from '@/../public/Services/05.jpg'
+import { useState } from "react"
 
-
+const listData=[
+  {
+    title:'Web development',
+    text:'We specialise in crafting beautiful, high quality marketing pages.The rest of the website will be a shell that uses lorem ipsum everywhere.',
+    img:service2,
+  },
+  {
+    title:'Application development',
+    text:'We have a team of skilled developers who are experts in the latest app frameworks, like Angular 1 and Google Web Toolkit.',
+    img:service3
+  },
+  {
+    title:'E-commerce',
+    text:'We are at the forefront of modern e-commerce development. Which mainly means adding your logo to the Shopify store template we’ve used for the past six years.',
+    img:service4
+  },
+  {
+    title:'Custom content management',
+    text:'At Studio we understand the importance of having a robust and customised CMS. That’s why we run all of our client projects out of a single, enormous Joomla instance.',
+    img:service5
+  },
+]
 
 
 export default function Services() {
+    const [hover,setHover]=useState<number|null>(null);
     return (
       <>
-        <SectionIntro
+        <SectionIntro 
           eyebrow="Services"
           title="We help you identify, explore and respond to new opportunities."
           className="mt-24 sm:mt-32 lg:mt-40"
@@ -33,32 +56,19 @@ export default function Services() {
             <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
               <FadeIn className="w-135 flex-none lg:w-180">
                 <StylizedImage
-                  src={service1}
+                  src={hover!==null ? listData[hover].img : service1}
                   sizes="(min-width: 1024px) 41rem, 31rem"
                   className="justify-center lg:justify-end"
                 />
               </FadeIn>
             </div>
             <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-132 lg:pl-4">
-              <ListItem title="Web development">
-                We specialise in crafting beautiful, high quality marketing pages.
-                The rest of the website will be a shell that uses lorem ipsum
-                everywhere.
-              </ListItem>
-              <ListItem title="Application development">
-                We have a team of skilled developers who are experts in the latest
-                app frameworks, like Angular 1 and Google Web Toolkit.
-              </ListItem>
-              <ListItem title="E-commerce">
-                We are at the forefront of modern e-commerce development. Which
-                mainly means adding your logo to the Shopify store template we’ve
-                used for the past six years.
-              </ListItem>
-              <ListItem title="Custom content management">
-                At Studio we understand the importance of having a robust and
-                customised CMS. That’s why we run all of our client projects out
-                of a single, enormous Joomla instance.
-              </ListItem>
+              {listData.map((l,id)=>(
+                    <ListItem title={l.title} key={id} onMouseCall={()=>setHover(id)} onMouseLeaveCall={()=>setHover(null)}>
+                        {l.text}
+                    </ListItem>
+              ))}
+          
             </List>
           </div>
         </Container>
@@ -79,7 +89,7 @@ export default function Services() {
               </h2>
               <div className="mt-6 flex">
                 <Button href="/contact" invert>
-                  Say Hej
+                  Say Hi
                 </Button>
               </div>
               <div className="mt-10 border-t border-white/10 pt-10">

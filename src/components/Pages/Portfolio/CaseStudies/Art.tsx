@@ -7,7 +7,7 @@ const stats = [
   
   export default function Art() {
     return (
-      <div className="relative bg-white dark:bg-gray-900">
+      <section className="relative bg-white dark:bg-gray-900">
         <img
           alt=""
           src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80"
@@ -40,7 +40,7 @@ const stats = [
             </div>
           </div>
         </div>
-      </div>
+      </section>
     )
   }
   

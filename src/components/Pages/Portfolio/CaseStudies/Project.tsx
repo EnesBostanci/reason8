@@ -1,6 +1,6 @@
 export default function Project() {
     return (
-      <div className="overflow-hidden bg-white py-24 sm:py-32 dark:bg-gray-900">
+      <section className="overflow-hidden bg-white py-24 sm:py-32 dark:bg-gray-900">
         <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
           <div className="max-w-4xl">
             <p className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">About us</p>
@@ -93,7 +93,7 @@ export default function Project() {
             </div>
           </section>
         </div>
-      </div>
+      </section>
     )
   }
   

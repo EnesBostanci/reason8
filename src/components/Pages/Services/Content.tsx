@@ -7,7 +7,7 @@ const stats = [
 
   export default function Content({imgUrl,dir}:{imgUrl:string;dir:boolean}) {
     return (
-      <div className="bg-white py-24 sm:py-32">
+      <section className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className={`${dir?"order-2":"order-1"} lg:pr-4`}>
@@ -102,7 +102,7 @@ const stats = [
             </div>
           </div>
         </div>
-      </div>
+      </section>
     )
   }
   

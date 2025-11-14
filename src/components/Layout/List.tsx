@@ -22,19 +22,19 @@ export function List({
 interface ListItemProps {
   title?: string
   children: React.ReactNode
-  onHoverStart?: () => void
-  onHoverEnd?: () => void
+  onMouseCall?: () => void 
+  onMouseLeaveCall?: () => void
 }
 
 export function ListItem({
   children,
   title, 
-  onHoverStart, 
-  onHoverEnd
+  onMouseCall, 
+  onMouseLeaveCall,
   
 }:ListItemProps) {
   return (
-    <li onMouseEnter={onHoverStart} onMouseLeave={onHoverEnd}className="group mt-10 first:mt-0">
+    <li onMouseEnter={onMouseCall} onMouseLeave={onMouseLeaveCall} className="group mt-10 first:mt-0">
       <FadeIn>
         <Border className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden">
           {title && (

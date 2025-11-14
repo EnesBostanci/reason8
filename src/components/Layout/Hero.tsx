@@ -1,4 +1,5 @@
 import clsx from 'clsx'
+import { Button } from '@/components/UI/SekletonCom/Button'
 
 import { Container } from '@/components/UI/SekletonCom/Container'
 import { FadeIn } from '@/components/Layout/FadeIn'
@@ -31,7 +32,10 @@ export default function Hero() {
         best value to our clients. The primary way we do that is by re-using
         the same five projects we’ve been developing for the past decade.
       </p>
-        </div>
+      </div>
+      <Button href="/projects" className="group rounded-full  mt-10 tracking-widest">
+      Showcase / Case Studies
+      </Button>
       </FadeIn>
     </Container>
     )

@@ -1,7 +1,7 @@
 export default function Hero() {
 
   return (
-      <main className="bg-white">
+      <section className="bg-white">
         <div className="relative isolate">
           <svg
             aria-hidden="true"
@@ -113,6 +113,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </main>
+      </section>
   )
 }

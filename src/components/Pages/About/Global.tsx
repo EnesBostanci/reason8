@@ -1,7 +1,7 @@
 import Image from "next/image"
 export default function Global() {
     return (
-      <div className="overflow-hidden bg-white py-24 sm:py-32">
+      <section className="overflow-hidden bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
           <div className="max-w-4xl">
             <p className="text-base/7 font-semibold text-indigo-600">About us</p>
@@ -63,7 +63,7 @@ export default function Global() {
             </div>
           </section>
         </div>
-      </div>
+      </section>
     )
   }
   

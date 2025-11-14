@@ -46,7 +46,7 @@ const tabs = [
 
 export default function Features() {
   return (
-    <div className="bg-white">
+    <section className="bg-white">
       <section aria-labelledby="features-heading" className="mx-auto max-w-7xl py-32 sm:px-2 lg:px-8">
         <div className="mx-auto max-w-2xl px-4 lg:max-w-none lg:px-0">
           <div className="max-w-3xl">
@@ -99,6 +99,6 @@ export default function Features() {
           </TabGroup>
         </div>
       </section>
-    </div>
+    </section>
   )
 }

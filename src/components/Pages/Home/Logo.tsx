@@ -1,6 +1,6 @@
 export default function Logo() {
     return (
-      <div className="bg-white py-24 sm:py-32">
+      <section className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-lg/8 font-semibold text-gray-900">
           Part of The 8 Group
@@ -43,7 +43,7 @@ export default function Logo() {
             />
           </div>
         </div>
-      </div>
+      </section>
     )
   }
   

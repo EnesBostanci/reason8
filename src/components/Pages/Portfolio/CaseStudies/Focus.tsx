@@ -1,6 +1,6 @@
 export default function Example() {
     return (
-      <div className="bg-white pt-24 pb-16 sm:pt-32 sm:pb-24 xl:pb-32 dark:bg-gray-900">
+      <section className="bg-white pt-24 pb-16 sm:pt-32 sm:pb-24 xl:pb-32 dark:bg-gray-900">
         <div className="bg-gray-900 pb-20 sm:pb-24 xl:pb-0 dark:bg-gray-800/50 dark:outline dark:outline-white/5">
           <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
             <div className="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
@@ -41,7 +41,7 @@ export default function Example() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     )
   }
   

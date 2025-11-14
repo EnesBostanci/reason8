@@ -1,6 +1,6 @@
 export default function BentoGrid() {
     return (
-      <div className="bg-white py-24 sm:py-32">
+      <section className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
           <h2 className="text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
           <p className="mt-2 max-w-lg text-4xl font-semibold tracking-tight text-pretty text-gray-950 sm:text-5xl">
@@ -101,7 +101,7 @@ export default function BentoGrid() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     )
   }
   

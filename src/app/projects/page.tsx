@@ -12,6 +12,7 @@ import Hero from "@/components/Pages/Portfolio/CaseStudies/Hero"
 import Content from "@/components/Pages/Services/Content";
 import Cta from "@/components/Pages/About/Cta";
 import Blog from "@/components/UI/Blog"
+import Photo from "@/components/Pages/Portfolio/CaseStudies/Photo"
 
 export default function page() {
   return (
@@ -22,6 +23,7 @@ export default function page() {
       <Challenges/>
       <Art/>
       <Project/>
+      <Photo/>
       <Introduction/>
       <BentoGrid/>
       <Content imgUrl='/Services/01.jpg' dir={false}/>
