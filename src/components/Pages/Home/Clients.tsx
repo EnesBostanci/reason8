@@ -2,14 +2,14 @@ import { Container } from '@/components/UI/SekletonCom/Container'
 import { FadeIn, FadeInStagger } from '@/components/Layout/FadeIn'
 import Image from 'next/image'
 
-import logoAbuDhabi from '@/public/clients/abuDhabi.png'
-import logoAlArabiya from '@/public/clients/alarabiya.png'
-import logoAlGad from '@/public/clients/algad.png'
-import logoANewz from '@/public/clients/anewz.png'
-import logoFivefold from '@/public/clients/fivefold.png'
-import logoJazeera from '@/public/clients/jazeera.png'
-import logoMediaCity from '@/public/clients/mediaCity.png'
-import logoShura from '@/public/clients/shura.png'
+import logoAbuDhabi from '@/../public/Clients/abuDhabi.png'
+import logoAlArabiya from '@/../public/Clients/alarabiya.png'
+import logoAlGad from '@/../public/Clients/algad.png'
+import logoANewz from '@/../public/Clients/anewz.png'
+import logoFivefold from '@/../public/Clients/fivefold.png'
+import logoJazeera from '@/../public/Clients/jazeera.png'
+import logoMediaCity from '@/../public/Clients/mediaCity.png'
+import logoShura from '@/../public/Clients/shura.png'
 
 const clients = [
   ['Abu Dhabi', logoAbuDhabi],
@@ -38,7 +38,7 @@ export default function Clients() {
               className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
             >
               {clients.map(([client, logo],id) => (
-                <li key={client}>
+                <li key={id}>
                   <FadeIn>
                     <Image width={185} height={36} src={logo} alt={client} unoptimized />
                   </FadeIn>

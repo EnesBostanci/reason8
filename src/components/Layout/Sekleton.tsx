@@ -13,13 +13,14 @@ import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 import { motion, MotionConfig, useReducedMotion } from 'framer-motion'
 
-import { Button } from '@/components/UI/SekletonCom/Button'
-import { Container } from '@/components/UI/SekletonCom//Container'
-import { Footer } from '@/components/UI/SekletonCom//Footer'
-import { GridPattern } from '@/components/UI/SekletonCom//GridPattern'
-import { Logo, Logomark } from '@/components/UI/SekletonCom//Logo'
-import { Offices } from '@/components/UI/SekletonCom//Offices'
-import { SocialMedia } from '@/components/UI/SekletonCom//SocialMedia'
+ import { Button } from '@/components/UI/SekletonCom/Button'
+
+import { Container } from '@/components/UI/SekletonCom/Container'
+import { Footer } from '@/components/UI/SekletonCom/Footer'
+import { GridPattern } from '@/components/UI/SekletonCom/GridPattern'
+// import { Logo, Logomark } from '@/components/UI/SekletonCom/Logo'
+import { Offices } from '@/components/UI/SekletonCom/Offices'
+import { SocialMedia } from '@/components/UI/SekletonCom/SocialMedia'
 import Image from 'next/image'
 
 const RootLayoutContext = createContext<{

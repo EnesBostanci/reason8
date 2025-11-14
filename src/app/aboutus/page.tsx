@@ -8,6 +8,7 @@ import Blog from "@/components/UI/Blog"
 
 import CallToAction from "@/components/UI/CallToAction"
 import { Sekleton } from "@/components/Layout/Sekleton";
+
   
 export default function page() {
   return (

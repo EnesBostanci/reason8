@@ -4,6 +4,7 @@ import CallToAction from "@/components/UI/CallToAction"
 import Content from "@/components/Pages/Services/Content"
 import { Sekleton } from "@/components/Layout/Sekleton";
 
+
 const servicesData=[
   {imgUrl:'/Services/01.jpg',dir:true},
   {imgUrl:'/Services/02.jpg',dir:false},

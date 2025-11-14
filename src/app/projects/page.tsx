@@ -1,5 +1,6 @@
 import BentoGrid from "@/components/UI/BentoGrid"
 import { Sekleton } from "@/components/Layout/Sekleton";
+
 import Introduction from "@/components/Pages/Portfolio/CaseStudies/Introduction"
 import Focus from "@/components/Pages/Portfolio/CaseStudies/Focus"
 import Help from "@/components/Pages/Portfolio/CaseStudies/Help"

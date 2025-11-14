@@ -88,7 +88,7 @@ export function Footer() {
           <Image width={132} height={32} alt='mainLogo' src={'MainLogo.svg'}/>
           </Link>
           <p className="text-sm text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
+            © Reason8 Media Agency Inc. {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>

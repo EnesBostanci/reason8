@@ -6,11 +6,11 @@ import { List, ListItem } from '@/components/Layout/List'
 import { SectionIntro } from '@/components/Layout/SectionIntro'
 import { StylizedImage } from '@/components/Layout/StylizedImage'
 import { Offices } from '@/components/UI/SekletonCom/Offices'
-import service1  from '@/public/Services/01.jpg'
-import service2  from '@/public/Services/02.jpg'
-import service3  from '@/public/Services/03.jpg'
-import service4  from '@/public/Services/04.jpg'
-import service5  from '@/public/Services/05.jpg'
+import service1  from '@/../public/Services/01.jpg'
+import service2  from '@/../public/Services/02.jpg'
+import service3  from '@/../public/Services/03.jpg'
+import service4  from '@/../public/Services/04.jpg'
+import service5  from '@/../public/Services/05.jpg'
 
 
 
