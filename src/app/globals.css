@@ -14,40 +14,46 @@
   --color-foreground: var(--foreground);
 
   /* Primary */
-  --color-primary-900: #200A3A;
+  --color-primary-900: #200a3a;
+  /* headings menu backgorund cta */
   --color-primary-800: #350175;
-  --color-primary-700: #500BB5;
-  --color-primary-600: #6C12EB;
-  --color-primary-500: #8642F8;
-  --color-primary-400: #B080FF;
-  --color-primary-300: #C6A1FF;
+
+  --color-primary-700: #500bb5;
+  /* buttons */
+  --color-primary-600: #6c12eb;
+  --color-primary-500: #8642f8;
+  --color-primary-400: #b080ff;
+  --color-primary-300: #c6a1ff;
 
   /* Secondary */
-  --color-secondary-red: #ED4245;
-  --color-secondary-orange: #FF5E59;
-  --color-secondary-pink: #FF8480;
+  --color-secondary-red: #ed4245;
+  --color-secondary-orange: #ff5e59;
+  --color-secondary-pink: #ff8480;
 
   /* Neutral */
-  --color-neutral-white: #FFFFFF;
-  --color-neutral-black: #23272A;
-  --color-neutral-gray: #F2F2F2;
+  --color-neutral-white: #ffffff;
+  --color-neutral-black: #23272a;
+  --color-neutral-gray: #f2f2f2;
 
   /* Support */
   --color-support-green: #208063;
-  --color-support-malachite: #58F287;
-  --color-support-eucalyptus: #52D999;
-  --color-support-gold: #FEB602;
-  --color-support-yellow: #FEE75C;
-  --color-support-flavescent: #FFED97;
+  --color-support-malachite: #58f287;
+  --color-support-eucalyptus: #52d999;
+  --color-support-gold: #feb602;
+  --color-support-yellow: #fee75c;
+  --color-support-flavescent: #ffed97;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }
 
+/* h1,h2,h3{
+  color:var()
+} */
 body {
   background: var(--background);
   color: var(--foreground);

@@ -1,13 +1,13 @@
-import {Button} from '@/components/UI/SekletonCom/Button'
-import { useId } from 'react'
+import { Button } from "@/components/UI/SekletonCom/Button";
+import { useId } from "react";
 
 function CircleBackground({
   color,
   ...props
-}: React.ComponentPropsWithoutRef<'svg'> & {
-  color: string
+}: React.ComponentPropsWithoutRef<"svg"> & {
+  color: string;
 }) {
-  let id = useId()
+  let id = useId();
 
   return (
     <svg
@@ -42,16 +42,14 @@ function CircleBackground({
         strokeLinecap="round"
       />
     </svg>
-  )
+  );
 }
-
-
 
 export default function CallToAction() {
   return (
     <section
       id="get-free-shares-today"
-      className="relative overflow-hidden bg-gray-900 py-20 sm:py-28"
+      className="relative overflow-hidden bg-primary-800 py-20 sm:py-28"
     >
       <div className="absolute top-1/2 left-20 -translate-y-1/2 sm:left-1/2 sm:-translate-x-1/2">
         <CircleBackground color="#fff" className="animate-spin-slower" />
@@ -67,13 +65,23 @@ export default function CallToAction() {
             first investment.
           </p>
           <div className="mt-8 flex justify-center gap-5">
-
-            <Button href="/contact" className="bg-white text-gray-900 hover:bg-gray-50 rounded-lg transition-colors " invert>Contact Us</Button>
-            <Button href="/aboutus" className="rounded-lg transition-colors bg-white text-gray-900 hover:bg-gray-50 " invert>Learn More</Button>
-
+            <Button
+              href="/contact"
+              className="  hover:bg-gray-50 rounded-lg transition-colors "
+              invert
+            >
+              Contact Us
+            </Button>
+            <Button
+              href="/aboutus"
+              className="rounded-lg transition-colors hover:bg-gray-50 "
+              invert
+            >
+              Learn More
+            </Button>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
