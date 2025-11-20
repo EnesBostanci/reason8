@@ -9,7 +9,7 @@ export default function Hero() {
     <Container className={clsx("mt-24 sm:mt-32 lg:mt-40")}>
       <FadeIn>
         <h1>
-          <span className="block font-display text-base font-semibold text-neutral-950">
+          <span className="block font-display text-base font-semibold ">
             OUR SERVICES
           </span>
           <span className="sr-only"> - </span>

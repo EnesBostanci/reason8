@@ -34,7 +34,7 @@ export function ListItem({
   
 }:ListItemProps) {
   return (
-    <li onMouseEnter={onMouseCall} onMouseLeave={onMouseLeaveCall} className="group mt-10 first:mt-0">
+    <li onMouseEnter={onMouseCall} onMouseLeave={onMouseLeaveCall} className="group transition-all duration-200 ease-in mt-10 first:mt-0 hover:scale-115">
       <FadeIn>
         <Border className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden">
           {title && (

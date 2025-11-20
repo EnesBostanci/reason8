@@ -18,17 +18,12 @@ export default function page() {
   return (
     <Sekleton bg="bg-gray-50">
       <Hero/>
-      <Introduction/>
-      <Focus/>
       <Challenges/>
-      <Art/>
-      <Project/>
       <Photo/>
       <Introduction/>
-      <BentoGrid/>
-      <Content imgUrl='/Services/01.jpg' dir={false}/>
-      <People/>
-      <Help/>
+      {/* add new */}
+      <Focus/>
+      <Challenges/>
       <Cta/>
       <Blog/>
     </Sekleton>

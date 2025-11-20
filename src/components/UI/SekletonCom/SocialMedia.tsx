@@ -17,7 +17,7 @@ export const socialMediaProfiles = [
     href: "https://behance.com",
     svg: "soicalmedia/Behance.svg",
   },
-  { title: "X", href: "https://github.com", svg: "soicalmedia/X.svg" },
+  { title: "X (Twitter)", href: "https://x.com", svg: "soicalmedia/X.svg" },
 ];
 
 export function SocialMedia({

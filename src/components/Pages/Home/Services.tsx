@@ -13,6 +13,33 @@ import service4 from "@/../public/Services/04.jpg";
 import service5 from "@/../public/Services/05.jpg";
 import { useState } from "react";
 
+const services = [
+  {
+    category: "Channel Branding & Rebranding",
+    description:
+      "We shape strong visual identities that elevate how audiences experience your channel.",
+    img: "branding-rebranding.jpg",
+  },
+  {
+    category: "Real-Time Graphics & Data Platforms",
+    description:
+      "We turn complex data into compelling, real-time visual stories.",
+    img: "real-time-graphics.jpg",
+  },
+  {
+    category: "Template Building & Automation",
+    description:
+      "We build powerful, flexible, and efficient templates that transform newsroom operations.",
+    img: "template-automation.jpg",
+  },
+  {
+    category: "AI-Powered Media Solutions",
+    description:
+      "We use AI to reshape how media is created, delivered, and experienced.",
+    img: "ai-media-solutions.jpg",
+  },
+];
+
 const listData = [
   {
     title: "Web development",
@@ -34,10 +61,26 @@ const listData = [
     text: "At Studio we understand the importance of having a robust and customised CMS. That’s why we run all of our client projects out of a single, enormous Joomla instance.",
     img: service5,
   },
+  {
+    title: "Custom content management",
+    text: "At Studio we understand the importance of having a robust and customised CMS. That’s why we run all of our client projects out of a single, enormous Joomla instance.",
+    img: service5,
+  },
+  {
+    title: "Custom content management",
+    text: "At Studio we understand the importance of having a robust and customised CMS. That’s why we run all of our client projects out of a single, enormous Joomla instance.",
+    img: service5,
+  },
+  {
+    title: "Custom content management",
+    text: "At Studio we understand the importance of having a robust and customised CMS. That’s why we run all of our client projects out of a single, enormous Joomla instance.",
+    img: service5,
+  },
 ];
 
 export default function Services() {
   const [hover, setHover] = useState<number | null>(null);
+
   return (
     <>
       <SectionIntro
@@ -61,7 +104,7 @@ export default function Services() {
               />
             </FadeIn>
           </div>
-          <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-132 lg:pl-4">
+          <List className="mt-16 lg:mt-0 lg:pl-4">
             {listData.map((l, id) => (
               <ListItem
                 title={l.title}

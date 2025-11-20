@@ -43,7 +43,7 @@ function Navigation() {
       <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
         {navigation.map((section, sectionIndex) => (
           <li key={sectionIndex}>
-            <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
+            <div className="font-display text-sm font-semibold tracking-wider text-primary-800">
               {section.title}
             </div>
             <ul role="list" className="mt-4 text-sm text-neutral-700">
@@ -71,13 +71,11 @@ export function Footer() {
       <FadeIn>
         <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
           <Navigation />
-          <div className="flex  flex-col lg:justify-end max-w-sm">
-            <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
-              THE 8 GROUP
-            </h2>
+          <div className="flex  flex-col lg:items-center gap-2  max-w-sm">
             <Image
+              className="h-full w-full max-w-[200px] lg:max-w-full"
               width={200}
-              height={200}
+              height={32}
               alt="footerLogo.svg"
               src={"footerLogo.svg"}
             />
@@ -86,8 +84,8 @@ export function Footer() {
         <div className="mt-24 mb-20 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
           <Link href="/" aria-label="Home">
             <Image
-              width={132}
-              height={32}
+              height={230}
+              width={171}
               alt="mainLogo"
               src={"MainLogo.svg"}
             />

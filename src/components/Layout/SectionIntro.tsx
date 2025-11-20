@@ -22,7 +22,8 @@ export function SectionIntro({
 }) {
   return (
     <Container {...props}>
-      <FadeIn className="max-w-2xl">
+      {/* max-w-2xl */}
+      <FadeIn className="max-w-full">
         <h2>
           {eyebrow && (
             <>
@@ -43,7 +44,7 @@ export function SectionIntro({
               smaller
                 ? 'text-2xl font-semibold'
                 : 'text-4xl font-medium sm:text-5xl',
-              invert ? 'text-white' : 'text-neutral-950',
+              invert ? 'text-white' : 'text-primary-800',
             )}
           >
             {title}

@@ -9,7 +9,7 @@ import ProductCenter from "@/components/Pages/Products/ProductCenter"
 
 export default function page() {
   return (
-    <Sekleton >
+    <Sekleton bg="bg-gray-50">
       <Hero/>
       <ProductRight/>
       <ProductCenter/>

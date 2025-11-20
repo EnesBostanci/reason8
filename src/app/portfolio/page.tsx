@@ -1,5 +1,4 @@
 import CallToAction from "@/components/UI/CallToAction"
-import BentoGrid from "@/components/UI/BentoGrid"
 import { Sekleton } from "@/components/Layout/Sekleton";
 
 import Clients from "@/components/Pages/Home/Clients";
@@ -11,7 +10,6 @@ export default function page() {
       <Hero/>
       <Clients/>
       <Features/>
-      <BentoGrid/>
       <CallToAction/>
     </Sekleton>
   );

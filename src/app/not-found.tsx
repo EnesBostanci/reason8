@@ -1,13 +1,19 @@
+import { Limelight } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-
 const socialMediaIcons = [
-  { name: "Behance", src: "/soicalmedia/Behance.svg" },
-  { name: "Instagram", src: "/soicalmedia/Instagram.svg" },
-  { name: "LinkedIn", src: "/soicalmedia/LinkedIn.svg" },
-  { name: "Telegram", src: "/soicalmedia/Telegram.svg" },
-  { name: "WhatsApp", src: "/soicalmedia/WhatsApp.svg" },
-  { name: "YouTube", src: "/soicalmedia/Youtube.svg" },
+  { name: "Behance", src: "/soicalmedia/Behance.svg", href: "" },
+  {
+    name: "Instagram",
+    src: "/soicalmedia/Instagram.svg",
+    href: "https://www.instagram.com/reson8media/",
+  },
+  {
+    name: "LinkedIn",
+    src: "/soicalmedia/LinkedIn.svg",
+    href: "https://www.linkedin.com/company/reson8media/",
+  },
+  { name: "X", src: "/soicalmedia/X.svg", href: "https://x.com/reson8mediaa" },
 ];
 
 export default function NotFound() {
@@ -54,13 +60,14 @@ export default function NotFound() {
           <div className="border-t border-gray-100 bg-gray-50 py-10 dark:border-white/10 dark:bg-gray-800/50">
             <nav className="mx-auto flex w-full max-w-7xl items-center gap-x-4 px-6 text-sm/7 text-gray-600 lg:px-8 dark:text-gray-400">
               {socialMediaIcons.map((icon) => (
-                <Image
-                  key={icon.name}
-                  src={icon.src}
-                  alt={icon.name}
-                  width={32}
-                  height={32}
-                />
+                <a key={icon.name} href={icon.href}>
+                  <Image
+                    src={icon.src}
+                    alt={icon.name}
+                    width={32}
+                    height={32}
+                  />
+                </a>
               ))}
             </nav>
           </div>

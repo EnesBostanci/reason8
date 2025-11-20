@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: black;
   --foreground: #171717;
 }
 
@@ -42,20 +42,26 @@
   --color-support-gold: #feb602;
   --color-support-yellow: #fee75c;
   --color-support-flavescent: #ffed97;
+
+  --animate-spin-slower: spin 6s linear infinite;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ffffff;
+    --background:black;
     --foreground: #ededed;
   }
-}
-
-/* h1,h2,h3{
-  color:var()
 } */
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-lexend), sans-serif;
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    color: #350175;
+  }
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-lexend), sans-serif;
+  }
 }

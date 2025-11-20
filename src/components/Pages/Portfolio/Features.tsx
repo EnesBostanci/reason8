@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
+import BentoGrid from "@/components/UI/BentoGrid"
 
 
 
@@ -47,6 +48,7 @@ const tabs = [
 export default function Features() {
   return (
     <section className="bg-white">
+
       <section aria-labelledby="features-heading" className="mx-auto max-w-7xl py-32 sm:px-2 lg:px-8">
         <div className="mx-auto max-w-2xl px-4 lg:max-w-none lg:px-0">
           <div className="max-w-3xl">
@@ -79,7 +81,8 @@ export default function Features() {
               {tabs.map((tab) => (
                 <TabPanel key={tab.name} className="space-y-16 pt-10 lg:pt-16">
                   {tab.features.map((feature) => (
-                    <div key={feature.name} className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
+                    <div key={feature.name} className='flex flex-col'>
+                    <div  className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
                       <div className="mt-6 lg:col-span-5 lg:mt-0">
                         <h3 className="text-lg font-medium text-gray-900">{feature.name}</h3>
                         <p className="mt-2 text-sm text-gray-500">{feature.description}</p>
@@ -91,6 +94,9 @@ export default function Features() {
                           className="aspect-2/1 w-full rounded-lg bg-gray-100 object-cover sm:aspect-5/2"
                         />
                       </div>
+                    </div>
+                    <BentoGrid className="lg:px-0"/>
+
                     </div>
                   ))}
                 </TabPanel>

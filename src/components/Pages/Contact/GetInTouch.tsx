@@ -6,7 +6,7 @@ import {
 
 export default function GetInTouch() {
   return (
-    <section className="relative isolate bg-white">
+    <section className="relative isolate bg-white mt-10">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pt-24 pb-20 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
@@ -105,7 +105,7 @@ export default function GetInTouch() {
                 </dt>
                 <dd>
                   <a
-                    href="mailto:hello@example.com"
+                    href="mailto:info@reson8media.com"
                     className="hover:text-gray-900"
                   >
                     info@reson8media.com
@@ -116,7 +116,7 @@ export default function GetInTouch() {
           </div>
         </div>
         <form
-          action="#"
+          action="mailto:info@reson8media.com"
           method="POST"
           className="px-6 pt-20 pb-24 sm:pb-32 lg:px-8 lg:py-48"
         >
@@ -132,7 +132,7 @@ export default function GetInTouch() {
                 <div className="mt-2.5">
                   <input
                     id="first-name"
-                    name="first-name"
+                    name="body"
                     type="text"
                     autoComplete="given-name"
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
@@ -149,7 +149,7 @@ export default function GetInTouch() {
                 <div className="mt-2.5">
                   <input
                     id="last-name"
-                    name="last-name"
+                    name="body"
                     type="text"
                     autoComplete="family-name"
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
@@ -166,7 +166,7 @@ export default function GetInTouch() {
                 <div className="mt-2.5">
                   <input
                     id="email"
-                    name="email"
+                    name="body"
                     type="email"
                     autoComplete="email"
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
@@ -183,7 +183,7 @@ export default function GetInTouch() {
                 <div className="mt-2.5">
                   <input
                     id="phone-number"
-                    name="phone-number"
+                    name="body"
                     type="tel"
                     autoComplete="tel"
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
@@ -200,7 +200,7 @@ export default function GetInTouch() {
                 <div className="mt-2.5">
                   <textarea
                     id="message"
-                    name="message"
+                    name="body"
                     rows={4}
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                     defaultValue={""}

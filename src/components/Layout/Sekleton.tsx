@@ -89,9 +89,9 @@ function Header({
           />
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href="/contact" invert={invert}>
+          {/* <Button href="/contact" invert={invert}>
             Contact us
-          </Button>
+          </Button> */}
           <button
             ref={toggleRef}
             type="button"
@@ -137,6 +137,7 @@ function NavigationItem({
   children: React.ReactNode;
 }) {
   return (
+    //
     <Link
       href={href}
       className="group relative isolate -mx-6 bg-primary-800 px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
@@ -158,15 +159,21 @@ function Navigation() {
         <NavigationItem href="/products">Products</NavigationItem>
         <NavigationItem href="/portfolio">Our Work</NavigationItem>
       </NavigationRow>
+      {/* <NavigationRow>
+        <NavigationItem href="/clients">Our Clients </NavigationItem>
+        <NavigationItem href="/contact">Contact us</NavigationItem>
+      </NavigationRow> */}
     </nav>
   );
 }
 
 function RootLayoutInner({
   children,
+  bg,
   grid = false,
 }: {
   children: React.ReactNode;
+  bg: string;
   grid?: boolean;
 }) {
   let panelId = useId();
@@ -276,7 +283,7 @@ function RootLayoutInner({
       <motion.div
         layout
         style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }}
-        className="relative flex flex-auto overflow-hidden bg-white pt-14"
+        className={`relative flex flex-auto overflow-hidden ${bg} pt-14`}
       >
         <motion.div
           layout
@@ -286,7 +293,6 @@ function RootLayoutInner({
             <GridPattern
               className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-neutral-50 stroke-neutral-950/5"
               yOffset={-96}
-              interactive
             />
           )}
 
@@ -301,9 +307,11 @@ function RootLayoutInner({
 
 export function Sekleton({
   children,
+  bg = "bg-white",
   grid = false,
 }: {
   children: React.ReactNode;
+  bg?: string;
   grid?: boolean;
 }) {
   let pathname = usePathname();
@@ -311,7 +319,7 @@ export function Sekleton({
 
   return (
     <RootLayoutContext.Provider value={{ logoHovered, setLogoHovered }}>
-      <RootLayoutInner key={pathname} grid={grid}>
+      <RootLayoutInner key={pathname} grid={grid} bg={bg}>
         {children}
       </RootLayoutInner>
     </RootLayoutContext.Provider>

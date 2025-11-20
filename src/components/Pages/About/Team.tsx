@@ -1,27 +1,27 @@
 const people = [
   {
+    name: "Rami Hosni",
+    role: " Managing Partner & CEO",
+    imageUrl: "/TeamPhotos/Rami.png",
+    bio: "Aliquet adipiscing lectus praesent cras sed quis lectus egestas erat. Bibendum curabitur eget habitant feugiat nec faucibus eu lorem suscipit. Vitae vitae tempor enim eget lacus nulla leo.",
+    xUrl: "https://x.com/ramiyaserhosni",
+    linkedinUrl: "https://www.linkedin.com/in/ramihosni",
+  },
+  {
     name: "Omar Abdelqader",
     role: "Managing Partner & CBO",
     imageUrl: "/TeamPhotos/Omar.png",
     bio: "Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.",
-    xUrl: "#",
-    linkedinUrl: "#",
+    xUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/abdelqadero",
   },
   {
     name: "Ali Husseini",
     role: "Managing Partner & CTO",
     imageUrl: "/TeamPhotos/Ali.png",
     bio: "Turpis lectus et amet elementum. Mi duis integer sed in vitae consequat. Nam vitae, in felis mi dui tempus. Porta at turpis eu odio. Et, sed duis in blandit bibendum accumsan. Purus viverra facilisi suspendisse quis est.",
-    xUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Rami Hosni",
-    role: " Managing Partner & CEO",
-    imageUrl: "/TeamPhotos/Rami.png",
-    bio: "Aliquet adipiscing lectus praesent cras sed quis lectus egestas erat. Bibendum curabitur eget habitant feugiat nec faucibus eu lorem suscipit. Vitae vitae tempor enim eget lacus nulla leo.",
-    xUrl: "#",
-    linkedinUrl: "#",
+    xUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/alihusseini",
   },
 ];
 
@@ -30,7 +30,7 @@ export default function Team() {
     <section className="bg-white py-24 md:py-32">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-20 px-6 lg:px-8 xl:grid-cols-5">
         <div className="max-w-2xl xl:col-span-2">
-          <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+          <h2 className="text-4xl font-semibold tracking-tight text-pretty text-primary-800 sm:text-5xl">
             Leadership Team
           </h2>
           <p className="mt-6 text-lg/8 text-gray-600">
@@ -53,28 +53,30 @@ export default function Team() {
                   {person.name}
                 </h3>
                 <p className="text-base/7 text-gray-600">{person.role}</p>
-                <p className="mt-6 text-base/7 text-gray-600">{person.bio}</p>
+                {/* <p className="mt-6 text-base/7 text-gray-600">{person.bio}</p> */}
                 <ul role="list" className="mt-6 flex gap-x-6">
-                  <li>
-                    <a
-                      href={person.xUrl}
-                      className="text-gray-400 hover:text-gray-500"
-                    >
-                      <span className="sr-only">X</span>
-                      <svg
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        aria-hidden="true"
-                        className="size-5"
+                  {person.xUrl && (
+                    <li>
+                      <a
+                        href={person.xUrl}
+                        className="text-primary-600 hover:text-primary-700"
                       >
-                        <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-                      </svg>
-                    </a>
-                  </li>
+                        <span className="sr-only">X</span>
+                        <svg
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          aria-hidden="true"
+                          className="size-5"
+                        >
+                          <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                        </svg>
+                      </a>
+                    </li>
+                  )}
                   <li>
                     <a
                       href={person.linkedinUrl}
-                      className="text-gray-400 hover:text-gray-500"
+                      className="text-primary-600 hover:text-primary-700"
                     >
                       <span className="sr-only">LinkedIn</span>
                       <svg

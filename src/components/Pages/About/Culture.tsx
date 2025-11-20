@@ -6,7 +6,7 @@ import { SectionIntro } from '@/components/Layout/SectionIntro'
 
 export default function Culture() {
     return (
-      <section className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
+      <section className="mt-24 rounded-4xl bg-primary-800 py-24 sm:mt-32 lg:mt-40 lg:py-32">
         <SectionIntro
           eyebrow="Core Values & Principles"
           title=" Mission To revolutionise content, optimise media workflows, and enhance storytelling across news, sports, 
