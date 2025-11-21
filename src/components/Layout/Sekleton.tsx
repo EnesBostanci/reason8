@@ -89,9 +89,9 @@ function Header({
           />
         </Link>
         <div className="flex items-center gap-x-8">
-          {/* <Button href="/contact" invert={invert}>
+          <Button href="/contact" invert={invert}>
             Contact us
-          </Button> */}
+          </Button>
           <button
             ref={toggleRef}
             type="button"
@@ -156,13 +156,9 @@ function Navigation() {
         <NavigationItem href="/services">Services</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/products">Products</NavigationItem>
-        <NavigationItem href="/portfolio">Our Work</NavigationItem>
+        <NavigationItem href="/clients">Our Work</NavigationItem>
+        <NavigationItem href="/portfolio">Clients</NavigationItem>
       </NavigationRow>
-      {/* <NavigationRow>
-        <NavigationItem href="/clients">Our Clients </NavigationItem>
-        <NavigationItem href="/contact">Contact us</NavigationItem>
-      </NavigationRow> */}
     </nav>
   );
 }
@@ -258,14 +254,14 @@ function RootLayoutInner({
             <div className="relative bg-primary-800 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
               <Container>
                 <div className="grid grid-cols-1 gap-y-10 pt-10 pb-16 sm:grid-cols-2 sm:pt-16">
-                  <div>
+                  <div className="flex items-center">
                     <h2 className="font-display text-base font-semibold text-white">
-                      Our offices
+                      info@reson8media.com
                     </h2>
-                    <Offices
+                    {/* <Offices
                       invert
                       className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
-                    />
+                    /> */}
                   </div>
                   <div className="sm:border-l sm:border-transparent sm:pl-16">
                     <h2 className="font-display text-base font-semibold text-white">

@@ -12,8 +12,16 @@ export default function Global() {
             Global Ideas, Local Impact
           </p>
         </div>
-        <section className=" grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
-          <div className="self-center">
+        <section className=" flex flex-col lg:flex-row lg:gap-x-16">
+          <div className="pt-16  lg:-mr-16 xl:mr-auto min-h-[600px] w-full lg:w-1/2 relative">
+            <Image
+              fill
+              alt=""
+              src="/Globe.png"
+              className="block size-full object-cover"
+            />
+          </div>
+          <div className="self-center w-full lg:w-1/2">
             <p className="mt-6 text-base/7 text-gray-600">
               From Qatar to Canada to Turkey, Reson8 Media operates as a truly
               global creative and broadcast powerhouse. Our diverse footprint
@@ -23,14 +31,7 @@ export default function Global() {
               the world.
             </p>
           </div>
-          <div className="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto min-h-[600px] w-full relative">
-            <Image
-              fill
-              alt=""
-              src="/Globe.png"
-              className="block size-full object-cover"
-            />
-          </div>
+
           {/* <div className="max-lg:mt-16 lg:col-span-1">
             <p className="text-base/7 font-semibold text-gray-500">
               The numbers

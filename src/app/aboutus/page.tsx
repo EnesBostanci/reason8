@@ -8,10 +8,23 @@ import Blog from "@/components/UI/Blog";
 import CallToAction from "@/components/UI/CallToAction";
 import { Sekleton } from "@/components/Layout/Sekleton";
 
+const coreValues = {
+  title: "Core Values",
+  tagline: "The Core Beat: What Drives Us Forward",
+  bullets: [
+    "Excellence",
+    "Integrity",
+    "Global Connectivity",
+    "Innovation",
+    "Collaboration",
+  ],
+};
+
 const creativeProcess1 = {
   title: "OUR CREATIVE PROCESS",
   tagline: "Crafting brilliance, one frame at a time",
 };
+
 const creativeProcess = [
   {
     step: "Brief & Kickoff",
@@ -85,26 +98,32 @@ const creativeProcess = [
   },
 ];
 
-const purposeAndAmbition = {
-  mission: {
+const purposeAndAmbition = [
+  {
     title: "Mission",
     description:
       "To revolutionize content creation and media workflows. Empowering broadcasters, agencies, and creators with cutting-edge tools and brilliant storytelling.",
   },
-  vision: {
+  {
     title: "Vision",
     description:
       "To lead the world of creative media, setting new standards through innovation, data intelligence, and bold storytelling.",
   },
-};
+];
 
 export default function page() {
   return (
     <Sekleton grid={true}>
       <Hero />
-      <Culture />
+      {/* Our Core Values*/}
+      <Culture data={coreValues} />
+      {/* Our Purpose & Ambition
+       */}
+      <Cta data={purposeAndAmbition[0]} />
+      <Cta data={purposeAndAmbition[1]} />
+      {/* creativeProcess */}
+      {/* <Culture /> */}
       <Global />
-      <Cta />
       <Team />
       <Blog />
       <CallToAction />

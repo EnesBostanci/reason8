@@ -18,62 +18,24 @@ const services = [
     category: "Channel Branding & Rebranding",
     description:
       "We shape strong visual identities that elevate how audiences experience your channel.",
-    img: "branding-rebranding.jpg",
+    img: service2,
   },
   {
     category: "Real-Time Graphics & Data Platforms",
     description:
       "We turn complex data into compelling, real-time visual stories.",
-    img: "real-time-graphics.jpg",
+    img: service3,
   },
   {
     category: "Template Building & Automation",
     description:
       "We build powerful, flexible, and efficient templates that transform newsroom operations.",
-    img: "template-automation.jpg",
+    img: service4,
   },
   {
     category: "AI-Powered Media Solutions",
     description:
       "We use AI to reshape how media is created, delivered, and experienced.",
-    img: "ai-media-solutions.jpg",
-  },
-];
-
-const listData = [
-  {
-    title: "Web development",
-    text: "We specialise in crafting beautiful, high quality marketing pages.The rest of the website will be a shell that uses lorem ipsum everywhere.",
-    img: service2,
-  },
-  {
-    title: "Application development",
-    text: "We have a team of skilled developers who are experts in the latest app frameworks, like Angular 1 and Google Web Toolkit.",
-    img: service3,
-  },
-  {
-    title: "E-commerce",
-    text: "We are at the forefront of modern e-commerce development. Which mainly means adding your logo to the Shopify store template we’ve used for the past six years.",
-    img: service4,
-  },
-  {
-    title: "Custom content management",
-    text: "At Studio we understand the importance of having a robust and customised CMS. That’s why we run all of our client projects out of a single, enormous Joomla instance.",
-    img: service5,
-  },
-  {
-    title: "Custom content management",
-    text: "At Studio we understand the importance of having a robust and customised CMS. That’s why we run all of our client projects out of a single, enormous Joomla instance.",
-    img: service5,
-  },
-  {
-    title: "Custom content management",
-    text: "At Studio we understand the importance of having a robust and customised CMS. That’s why we run all of our client projects out of a single, enormous Joomla instance.",
-    img: service5,
-  },
-  {
-    title: "Custom content management",
-    text: "At Studio we understand the importance of having a robust and customised CMS. That’s why we run all of our client projects out of a single, enormous Joomla instance.",
     img: service5,
   },
 ];
@@ -98,21 +60,21 @@ export default function Services() {
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-135 flex-none lg:w-180">
               <StylizedImage
-                src={hover !== null ? listData[hover].img : service1}
+                src={hover !== null ? services[hover].img : service1}
                 sizes="(min-width: 1024px) 41rem, 31rem"
                 className="justify-center lg:justify-end"
               />
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:pl-4">
-            {listData.map((l, id) => (
+            {services.map((l, id) => (
               <ListItem
-                title={l.title}
+                title={l.category}
                 key={id}
                 onMouseCall={() => setHover(id)}
                 onMouseLeaveCall={() => setHover(null)}
               >
-                {l.text}
+                {l.description}
               </ListItem>
             ))}
           </List>

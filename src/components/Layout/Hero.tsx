@@ -28,12 +28,6 @@ export default function Hero() {
             streamline workflows, and build future-ready media ecosystems.
           </p>
         </div>
-        <Button
-          href="/projects"
-          className="group rounded-full  mt-10 tracking-widest"
-        >
-          Showcase / Case Studies
-        </Button>
       </FadeIn>
     </Container>
   );

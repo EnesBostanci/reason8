@@ -55,7 +55,7 @@ export default function Blog() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-4xl font-semibold tracking-tight text-balance text-primary-800 sm:text-5xl">
-            From the blog
+            Our Work{" "}
           </h2>
           <p className="mt-2 text-lg/8 text-gray-600">
             Learn how to grow your business with our expert advice.

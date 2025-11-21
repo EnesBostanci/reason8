@@ -76,8 +76,8 @@ export function Footer() {
               className="h-full w-full max-w-[200px] lg:max-w-full"
               width={200}
               height={32}
-              alt="footerLogo.svg"
-              src={"footerLogo.svg"}
+              alt="The8GroupLogo"
+              src={"The8GroupLogo.svg"}
             />
           </div>
         </div>
