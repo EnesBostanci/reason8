@@ -21,14 +21,13 @@ export default function Content({
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className={`${data.dir ? "order-2" : "order-1"} lg:pr-4`}>
-            <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pt-64 pb-9 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+            <div className="relative min-h-[550px] overflow-hidden rounded-3xl bg-gray-900 px-6 pt-64 pb-9 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
               <img
                 alt=""
                 src={data.imgUrl}
                 className="absolute inset-0 size-full rounded-3xl object-cover "
               />
-              <div className="absolute inset-0 " />
-              <figure className="relative isolate">
+              {/* <figure className="relative isolate">
                 <img
                   alt=""
                   src="https://tailwindcss.com/plus-assets/img/logos/workcation-logo-white.svg"
@@ -47,7 +46,7 @@ export default function Content({
                   </strong>
                   CEO at Workcation
                 </figcaption>
-              </figure>
+              </figure> */}
             </div>
           </div>
           <div className={`${data.dir ? "order-1" : "order-2"}`}>
@@ -62,16 +61,16 @@ export default function Content({
                 <p className="mt-8">{data.offerings[2]}</p>
               </div>
             </div>
-            <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4"></dl>
-            <div className="mt-10 flex">
+            {/* <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4"></dl> */}
+            {/* <div className="mt-10 flex">
               <a
                 href="#"
-                className="text-base/7 font-semibold text-indigo-600 hover:text-indigo-500"
+                className="text-base/7 font-semibold text-primary-600 hover:text-indigo-500"
               >
                 Learn more about our company
                 <span aria-hidden="true">&rarr;</span>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

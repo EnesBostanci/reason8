@@ -23,6 +23,14 @@ const people = [
     xUrl: "",
     linkedinUrl: "https://www.linkedin.com/in/alihusseini",
   },
+  {
+    name: "Khadija Ghanem",
+    role: "Group Chief Marketing Officer",
+    imageUrl: "/TeamPhotos/Khadija.png",
+    bio: "Turpis lectus et amet elementum. Mi duis integer sed in vitae consequat. Nam vitae, in felis mi dui tempus. Porta at turpis eu odio. Et, sed duis in blandit bibendum accumsan. Purus viverra facilisi suspendisse quis est.",
+    xUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/khadija-ghanem-29474a158/",
+  },
 ];
 
 export default function Team() {

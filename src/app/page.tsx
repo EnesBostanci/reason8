@@ -1,6 +1,5 @@
 import Hero from "@/components/Pages/Home/Hero";
 import Logo from "@/components/Pages/Home/Logo";
-import Portfolio from "@/components/Pages/Home/Portfolio";
 import BentoGridHome from "@/components/Pages/Home/BentoGridHome";
 import CallToAction from "@/components/UI/CallToAction";
 import Clients from "@/components/Pages/Home/Clients";
@@ -14,7 +13,6 @@ export default function page() {
       <Clients />
       <Services />
       <BentoGridHome />
-      <Portfolio />
       <Logo />
       <CallToAction />
     </Sekleton>

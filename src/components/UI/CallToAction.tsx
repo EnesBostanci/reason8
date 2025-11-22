@@ -45,11 +45,11 @@ function CircleBackground({
   );
 }
 
-export default function CallToAction() {
+export default function CallToAction({ clasName }: { clasName?: string }) {
   return (
     <section
       id="get-free-shares-today"
-      className="relative overflow-hidden bg-primary-800 text-white py-20 sm:py-28"
+      className={`relative overflow-hidden bg-primary-800 text-white py-20 sm:py-28 ${clasName}`}
     >
       <div className="absolute top-1/2 left-20 -translate-y-1/2 sm:left-1/2 sm:-translate-x-1/2">
         <CircleBackground color="#fff" className="animate-spin-slower" />

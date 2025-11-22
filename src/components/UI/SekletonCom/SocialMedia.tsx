@@ -4,20 +4,24 @@ import clsx from "clsx";
 export const socialMediaProfiles = [
   {
     title: "LinkedIn",
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/company/reson8media/",
     svg: "soicalmedia/LinkedIn.svg",
   },
   {
     title: "Instagram",
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/reson8media/",
     svg: "soicalmedia/Instagram.svg",
   },
   {
     title: "Behance",
-    href: "https://behance.com",
+    href: "https://www.behance.net/r8media",
     svg: "soicalmedia/Behance.svg",
   },
-  { title: "X (Twitter)", href: "https://x.com", svg: "soicalmedia/X.svg" },
+  {
+    title: "X (Twitter)",
+    href: "https://x.com/reson8mediaa",
+    svg: "soicalmedia/X.svg",
+  },
 ];
 
 export function SocialMedia({

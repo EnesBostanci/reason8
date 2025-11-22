@@ -1,6 +1,6 @@
-import { useId } from 'react'
-import Image, { type ImageProps } from 'next/image'
-import clsx from 'clsx'
+import { useId } from "react";
+import Image, { type ImageProps } from "next/image";
+import clsx from "clsx";
 
 // const shapes = [
 //   {
@@ -20,12 +20,11 @@ import clsx from 'clsx'
 //   },
 // ]
 
-
 const shapes = [
   {
     width: 600,
     height: 680,
-    path: 'M0 0 H600 V680 H0 Z',
+    path: "M0 0 H600 V680 H0 Z",
   },
   // {
   //   width: 719,
@@ -38,26 +37,23 @@ const shapes = [
   //   path: 'M0 0 H719 V680 H0 Z',
   // },
 ];
-type ImagePropsWithOptionalAlt = Omit<ImageProps, 'alt'> & { alt?: string }
+type ImagePropsWithOptionalAlt = Omit<ImageProps, "alt"> & { alt?: string };
 
 export function StylizedImage({
   shape = 0,
   className,
   ...props
 }: ImagePropsWithOptionalAlt & { shape?: 0 | 1 | 2 }) {
-  let id = useId()
-  let { width, height, path } = shapes[shape]
+  let id = useId();
+  let { width, height, path } = shapes[shape];
 
   return (
     <div
-      className={clsx(
-        className,
-        'relative flex aspect-[600/680] maw-w-[600] grayscale',
-      )}
+      className={clsx(className, "relative flex aspect-[600/680] maw-w-[600]")}
     >
       <svg viewBox={`0 0 ${width} ${height}`} fill="none" className="h-full">
         <g clipPath={`url(#${id}-clip)`} className="group">
-          <g className="origin-center scale-100 transition duration-500 motion-safe:group-hover:scale-105">
+          <g className="origin-center scale-100 transition duration-300 motion-safe:group-hover:scale-105">
             <foreignObject width={width} height={height}>
               <Image
                 alt=""
@@ -85,5 +81,5 @@ export function StylizedImage({
         </defs>
       </svg>
     </div>
-  )
+  );
 }

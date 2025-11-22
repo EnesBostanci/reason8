@@ -80,10 +80,17 @@ const services = [
   },
 ];
 
+const heroTitle = {
+  title: "OUR SERVICES",
+  header: "Discover what we do best",
+  description:
+    "At Reson8 Media, we combine technology, creativity, and AI-driven innovation to help broadcasters elevate their storytelling, streamline workflows, and build future-ready media ecosystems.",
+};
+
 export default function page() {
   return (
     <Sekleton grid={true}>
-      <Hero />
+      <Hero data={heroTitle} />
 
       {services.map((c, id) => (
         <Content key={id} data={c} />

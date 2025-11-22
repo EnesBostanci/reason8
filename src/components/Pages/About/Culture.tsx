@@ -3,13 +3,17 @@ import { GridList, GridListItem } from "@/components/Layout/GridList";
 import { SectionIntro } from "@/components/Layout/SectionIntro";
 
 export default function Culture({
+  title,
+  tagline,
   data,
 }: {
-  data: { title: string; tagline: string; bullets: string[] };
+  title: string;
+  tagline: string;
+  data: { subheader: string[]; description?: string[]; bullets?: string[][] };
 }) {
   return (
     <section className="mt-24 rounded-4xl bg-primary-800 py-24 sm:mt-32 lg:mt-40 lg:py-32">
-      <SectionIntro eyebrow={data.title} title={data.tagline} invert>
+      <SectionIntro eyebrow={title} title={tagline} invert>
         {/* <p>
           Vision Aspiring to be the vanguard of creative media services, we aim
           to set global industry benchmarks with our data-driven and innovative
@@ -18,20 +22,18 @@ export default function Culture({
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          {data.bullets.map((d, id) => (
+          {data.subheader.map((d, id) => (
             <GridListItem key={id} title={d} invert>
-              <ul>
-                <p>
-                  {" "}
-                  description Beyond delivery. We stay with you. Our partnership
-                  doesn’t end at handover. We support updates, refinements, and
-                  long-term optimization — ensuring your content continues to
-                  shine."
-                </p>
-                <li> -Full content delivery </li>
-                <li>-Ongoing support for updates</li>
-                <li>-Usage guidance & handover</li>
-              </ul>
+              {data.description?.[id] && (
+                <p className="mt-5">{data.description[id]}</p>
+              )}
+              {data.bullets?.[id] && (
+                <div className="mt-3 space-y-2">
+                  {data.bullets[id].map((bullet, bulletIndex) => (
+                    <p key={bulletIndex}>{bullet}</p>
+                  ))}
+                </div>
+              )}
             </GridListItem>
           ))}
         </GridList>

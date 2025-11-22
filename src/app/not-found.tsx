@@ -2,7 +2,11 @@ import { Limelight } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 const socialMediaIcons = [
-  { name: "Behance", src: "/soicalmedia/Behance.svg", href: "" },
+  {
+    name: "Behance",
+    src: "/soicalmedia/Behance.svg",
+    href: "https://www.behance.net/r8media",
+  },
   {
     name: "Instagram",
     src: "/soicalmedia/Instagram.svg",
@@ -37,7 +41,7 @@ export default function NotFound() {
         </header>
         <main className="mx-auto w-full max-w-7xl px-6 py-24 sm:py-32 lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:px-8">
           <div className="max-w-lg">
-            <p className="text-base/8 font-semibold text-indigo-600 dark:text-indigo-400">
+            <p className="text-base/8 font-semibold text-primary-600 dark:text-indigo-400">
               404
             </p>
             <h1 className="mt-4 text-5xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-6xl dark:text-white">
@@ -49,7 +53,7 @@ export default function NotFound() {
             <div className="mt-10">
               <a
                 href="#"
-                className="text-sm/7 font-semibold text-indigo-600 dark:text-indigo-400"
+                className="text-sm/7 font-semibold text-primary-600 dark:text-indigo-400"
               >
                 <span aria-hidden="true">&larr;</span> Back to home
               </a>

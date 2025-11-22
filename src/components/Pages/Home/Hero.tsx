@@ -47,20 +47,20 @@ export default function Hero() {
           <div className="mx-auto max-w-7xl px-6 pt-36 pb-32 sm:pt-60 lg:px-8 lg:pt-32">
             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
-                <h1 className="text-5xl font-semibold tracking-tight   sm:text-7xl">
+                <h1 className="text-5xl font-bold tracking-tight   sm:text-7xl">
                   Create. Innovate. Resonate.
                 </h1>
-                <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
+                <p className="mt-8 text-lg  font-bold text-pretty text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
                   Creative media and broadcast solutions that resonate.
                 </p>
-                <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
+                <p className="mt-8 text-lg  text-pretty text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
                   At Reson8 Media, we blend creativity with cutting-edge
                   technology to craft stories that connect, inspire, and shape
                   how audiences experience content. We stand at the forefront of
                   the media evolution, pushing boundaries, redefining workflows,
                   and turning bold ideas into powerful visual narratives.
                 </p>
-                <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
+                <p className="mt-8 text-lg text-pretty text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
                   From news and sports to entertainment and immersive
                   experiences, our work is driven by a passion for innovation
                   and a commitment to excellence. We don’t just create content,
@@ -69,12 +69,12 @@ export default function Hero() {
                 </p>
 
                 <div className="mt-10 flex items-center gap-x-6">
-                  <a
+                  {/* <a
                     href="#"
                     className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Get started
-                  </a>
+                  </a> */}
                 </div>
               </div>
               <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
