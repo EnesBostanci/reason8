@@ -38,7 +38,7 @@ const strategic = {
     "End-to-End Studio Delivery with Technical Planning & Workflow Alignment",
   description:
     "Backed by a clear agreement, Reson8 Media provided end-to-end delivery — not only on physical sets, but on technical planning, broadcast-readiness, and workflow alignment.",
-  img: "studies/studio/strategic.jpg",
+  img: "studies/studio/strategic.JPG",
   incentives: [
     {
       name: "Studio Spatial Planning",
