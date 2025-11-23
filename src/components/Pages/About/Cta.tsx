@@ -1,31 +1,31 @@
+import { Button } from "@/components/UI/SekletonCom/Button";
+
 export default function Cta({
-  data,
+  title,
+  description,
 }: {
-  data: { title: string; description: string };
+  title: string;
+  description: string;
 }) {
   return (
     <section className="bg-white">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="relative isolate overflow-hidden bg-primary-800 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
           <h2 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
-            {data.title}{" "}
+            {title}
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-gray-300">
-            {data.description}
+            {description}
           </p>
-          {/* <div className="mt-10 flex items-center justify-center gap-x-6">
-            <a
-              href="#"
-              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-xs hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          <div className="mt-10 flex items-center justify-center gap-x-6">
+            <Button
+              href="/contact"
+              className="  hover:bg-gray-50 rounded-lg transition-colors "
+              invert
             >
-              {' '}
-              Get started{' '}
-            </a>
-            <a href="#" className="text-sm/6 font-semibold text-white">
-              Learn more
-              <span aria-hidden="true">→</span>
-            </a>
-          </div> */}
+              Contact Us
+            </Button>
+          </div>
           <svg
             viewBox="0 0 1024 1024"
             aria-hidden="true"

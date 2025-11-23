@@ -65,11 +65,7 @@ export default function CallToAction({ clasName }: { clasName?: string }) {
             frame is designed to inspire and resonate.
           </p> */}
           <div className="mt-8 flex justify-center gap-5">
-            <Button
-              href="/contact"
-              className="  hover:bg-gray-50 rounded-lg transition-colors "
-              invert
-            >
+            <Button href="/contact" className="rounded-lg  " invert>
               Contact Us
             </Button>
             {/* <Button

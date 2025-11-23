@@ -12,12 +12,12 @@ const clients = {
     "We partner with broadcasters, brands, and creators who value bold ideas and exceptional storytelling — delivering work that resonates across industries and audiences.",
 };
 const partners = [
-  { name: "Fivefold", logo: "/partners /Color/Fivefold logo_Trans.png" },
-  { name: "IABM", logo: "/partners /Color/Iabm.png" },
-  { name: "Vizrt", logo: "/partners /Color/Vizrt-Logo-Orange_L.webp" },
+  { name: "Fivefold", logo: "/partners/fivefold.png" },
+  { name: "IABM", logo: "/partners/iabm.png" },
+  { name: "Vizrt", logo: "/partners/vizrt.webp" },
   {
     name: "Zero Density",
-    logo: "/partners /Color/zerodensity2-logo-1024x258.png",
+    logo: "/partners/zerodensity.png",
   },
 ];
 

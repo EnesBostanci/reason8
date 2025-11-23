@@ -14,7 +14,7 @@ const services = [
       "High-impact motion graphics and immersive branding elements",
       "Full channel launch and rebranding programs",
     ],
-    imgUrl: "/Services/01.jpg",
+    imgUrl: "/Services/ChannelBranding.jpg",
     dir: true,
   },
   {
@@ -26,7 +26,7 @@ const services = [
       "Automated data feeds and intelligent visualization",
       "AI-powered graphic automation for fast, accurate on-air content",
     ],
-    imgUrl: "/Services/02.jpg",
+    imgUrl: "/Services/Real-Time.jpg",
     dir: false,
   },
   {
@@ -39,7 +39,7 @@ const services = [
       "Workflow optimization for faster, cleaner, more consistent output",
       "Viz Pilot Edge transformation and modernization of graphics workflows",
     ],
-    imgUrl: "/Services/03.jpg",
+    imgUrl: "/Services/TemplateBuilding.jpg",
     dir: true,
   },
   {
@@ -51,7 +51,7 @@ const services = [
       "AI-powered content and production strategies",
       "Hands-on training for newsrooms, designers, and broadcast teams",
     ],
-    imgUrl: "/Services/04.jpg",
+    imgUrl: "/Services/Strategy.jpg",
     dir: false,
   },
   {
@@ -63,7 +63,7 @@ const services = [
       "Interactive touchscreen systems for dynamic on-air engagement",
       "Immersive virtual production experiences and virtual sets",
     ],
-    imgUrl: "/Services/05.jpg",
+    imgUrl: "/Services/Broadcast.jpg",
     dir: true,
   },
   {
@@ -75,7 +75,7 @@ const services = [
       "Automation across news, sports, and entertainment workflows",
       "Real-time AI systems that enhance speed, accuracy, and insight",
     ],
-    imgUrl: "/Services/06.jpg",
+    imgUrl: "/Services/AI-Powered.jpg",
     dir: false,
   },
 ];

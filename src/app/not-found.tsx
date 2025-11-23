@@ -41,9 +41,7 @@ export default function NotFound() {
         </header>
         <main className="mx-auto w-full max-w-7xl px-6 py-24 sm:py-32 lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:px-8">
           <div className="max-w-lg">
-            <p className="text-base/8 font-semibold text-primary-600 dark:text-indigo-400">
-              404
-            </p>
+            <p className="text-base/8 font-semibold text-primary-600 ">404</p>
             <h1 className="mt-4 text-5xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-6xl dark:text-white">
               Page not found
             </h1>
@@ -52,8 +50,8 @@ export default function NotFound() {
             </p>
             <div className="mt-10">
               <a
-                href="#"
-                className="text-sm/7 font-semibold text-primary-600 dark:text-indigo-400"
+                href="./"
+                className="text-sm/7 font-semibold text-primary-600 "
               >
                 <span aria-hidden="true">&larr;</span> Back to home
               </a>

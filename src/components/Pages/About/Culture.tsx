@@ -9,7 +9,7 @@ export default function Culture({
 }: {
   title: string;
   tagline: string;
-  data: { subheader: string[]; description?: string[]; bullets?: string[][] };
+  data: string[];
 }) {
   return (
     <section className="mt-24 rounded-4xl bg-primary-800 py-24 sm:mt-32 lg:mt-40 lg:py-32">
@@ -22,18 +22,9 @@ export default function Culture({
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          {data.subheader.map((d, id) => (
+          {data.map((d, id) => (
             <GridListItem key={id} title={d} invert>
-              {data.description?.[id] && (
-                <p className="mt-5">{data.description[id]}</p>
-              )}
-              {data.bullets?.[id] && (
-                <div className="mt-3 space-y-2">
-                  {data.bullets[id].map((bullet, bulletIndex) => (
-                    <p key={bulletIndex}>{bullet}</p>
-                  ))}
-                </div>
-              )}
+              <></>
             </GridListItem>
           ))}
         </GridList>

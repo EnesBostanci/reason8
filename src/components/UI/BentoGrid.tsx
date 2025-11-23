@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const caseImages = {
   abuDhabi: "/cases/abuDhabi.png",
   birdseye: "/cases/birdseye.webp",
@@ -7,66 +9,67 @@ const caseImages = {
   studio: "/cases/studio.JPG",
 } as const;
 
-export default function BentoGrid({
-  className = "lg:px-8",
-}: {
-  className?: string;
-}) {
+export default function BentoGridHome() {
   return (
-    // ${className ? "py-12 sm:py-16 " : "py-24 sm:py-32 "}
-
-    <section className={`bg-white  `}>
-      {/* lg:px-8 */}
-      <div className={`mx-auto max-w-2xl px-6 lg:max-w-7xl  ${className}`}>
+    <section className="bg-white ">
+      <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
-          <div className="relative lg:col-span-3  transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+          <Link
+            href="/shams"
+            className="relative block lg:col-span-3  transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+          >
             <div className="absolute inset-0 rounded-lg bg-white max-lg:rounded-t-4xl lg:rounded-tl-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
               <img
                 alt=""
-                src={caseImages.abuDhabi}
-                className="h-80 object-cover"
+                src={caseImages.shams}
+                className="h-80 object-cover "
               />
               <div className="p-10 pt-4">
                 <h3 className="text-sm/4 font-semibold text-primary-600">
-                  Performance
+                  Case Study
                 </h3>
                 <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">
-                  Lightning-fast builds
+                  Shams TV – Pioneering Broadcast Innovation from Erbil
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  gravida justo et nulla efficitur, maximus egestas sem
-                  pellentesque.
+                  A complete creative and technical partnership by Reson8 Media
                 </p>
               </div>
             </div>
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-t-4xl lg:rounded-tl-4xl" />
-          </div>
-          <div className="relative lg:col-span-3  transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+          </Link>
+          <Link
+            href="/abudhabi"
+            className="relative block lg:col-span-3  transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+          >
             <div className="absolute inset-0 rounded-lg bg-white lg:rounded-tr-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
               <img
                 alt=""
-                src={caseImages.studio}
-                className="h-80 object-cover"
+                src={caseImages.abuDhabi}
+                className="h-80 object-cover "
               />
               <div className="p-10 pt-4">
                 <h3 className="text-sm/4 font-semibold text-primary-600">
-                  Releases
+                  Case Study
                 </h3>
                 <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">
-                  Push to deploy
+                  Abu Dhabi Media Network
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                  Curabitur auctor, ex quis auctor venenatis, eros arcu rhoncus
-                  massa, laoreet dapibus ex elit vitae odio.
+                  News Programs Rebranding & VIZrt templates Strategic Overview
+                  of ID8 Media&apos;s Visual Mastery in Abu Dhabi&apos;s Channel
+                  Identity
                 </p>
               </div>
             </div>
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-black/5 lg:rounded-tr-4xl" />
-          </div>
-          <div className="relative lg:col-span-2  transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+          </Link>
+          <Link
+            href="/portfolio"
+            className="relative block lg:col-span-2  transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+          >
             <div className="absolute inset-0 rounded-lg bg-white lg:rounded-bl-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
               <img
@@ -76,61 +79,72 @@ export default function BentoGrid({
               />
               <div className="p-10 pt-4">
                 <h3 className="text-sm/4 font-semibold text-primary-600">
-                  Speed
+                  Show Case
                 </h3>
                 <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">
-                  Built for power users
+                  Bird&apos;s Eye View
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                  Sed congue eros non finibus molestie. Vestibulum euismod
-                  augue.
+                  Al Jazeera English, a globally recognized media powerhouse,
+                  sought to craft an engaging and informative investigative
+                  series, harnessing its wealth of digital investigative
+                  information.
                 </p>
               </div>
             </div>
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-black/5 lg:rounded-bl-4xl" />
-          </div>
-          <div className="relative lg:col-span-2  transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+          </Link>
+          <Link
+            href="/studio"
+            className="relative block lg:col-span-2  transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+          >
             <div className="absolute inset-0 rounded-lg bg-white" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
               <img
                 alt=""
-                src={caseImages.shams}
+                src={caseImages.studio}
                 className="h-80 object-cover"
               />
               <div className="p-10 pt-4">
                 <h3 className="text-sm/4 font-semibold text-primary-600">
-                  Integrations
+                  Case Study
                 </h3>
                 <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">
-                  Connect your favorite tools
+                  Launching Bold: Reson8 Media Designs Broadcast-Ready Studios
+                  for Shams TV
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                  Maecenas at augue sed elit dictum vulputate, in nisi aliquam
-                  maximus arcu.
+                  Studio architecture, set design, AR-ready infrastructure,
+                  creative direction, functional layout consultation, and
+                  cross-format usability planning
                 </p>
               </div>
             </div>
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-black/5" />
-          </div>
-          <div className="relative lg:col-span-2  transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+          </Link>
+          <Link
+            href="/portfolio"
+            className="relative block lg:col-span-2  transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+          >
             <div className="absolute inset-0 rounded-lg bg-white max-lg:rounded-b-4xl lg:rounded-br-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
               <img alt="" src={caseImages.kown} className="h-80 object-cover" />
               <div className="p-10 pt-4">
                 <h3 className="text-sm/4 font-semibold text-primary-600">
-                  Network
+                  Show Case
                 </h3>
                 <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">
-                  Globally distributed CDN
+                  Kown Visual Branding
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                  Aenean vulputate justo commodo auctor vehicula in malesuada
-                  semper.
+                  In an era where the balance between traditional roots and
+                  modern outlook is crucial for businesses seeking to establish
+                  their identity, Kown Capital posed a unique challenge.
                 </p>
               </div>
             </div>
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-b-4xl lg:rounded-br-4xl" />
-          </div>
+          </Link>
         </div>
       </div>
     </section>

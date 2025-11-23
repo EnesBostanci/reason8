@@ -1,17 +1,10 @@
-const stats = [
-  { label: "Founded", value: "2021" },
-  { label: "Employees", value: "37" },
-  { label: "Countries", value: "12" },
-  { label: "Raised", value: "$25M" },
-];
-
 export default function Content({
   data,
 }: {
   data: {
     category: string;
     description: string;
-    offerings: string[];
+    offerings?: string[];
     imgUrl: string;
     dir: boolean;
   };
@@ -56,9 +49,13 @@ export default function Content({
               </h1>
               <div className="max-w-xl">
                 <p className="mt-6">{data.description}</p>
-                <p className="mt-8">{data.offerings[0]}</p>
-                <p className="mt-8">{data.offerings[1]}</p>
-                <p className="mt-8">{data.offerings[2]}</p>
+                {data.offerings && (
+                  <>
+                    <p className="mt-8">{data.offerings[0]}</p>
+                    <p className="mt-8">{data.offerings[1]}</p>
+                    <p className="mt-8">{data.offerings[2]}</p>
+                  </>
+                )}
               </div>
             </div>
             {/* <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4"></dl> */}

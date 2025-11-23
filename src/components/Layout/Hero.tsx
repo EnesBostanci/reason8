@@ -20,7 +20,7 @@ export default function Hero({
       <FadeIn>
         <h1>
           <span className="block font-display text-neutral-950 font-semibold ">
-            {data.title}{" "}
+            {data.title}
           </span>
           <span className="sr-only"> - </span>
           <span
@@ -28,7 +28,7 @@ export default function Hero({
               "mt-6 block max-w-5xl font-display text-5xl font-bold tracking-tight text-balance text-primary-800 sm:text-6xl"
             )}
           >
-            {data.header}{" "}
+            {data.header}
           </span>
         </h1>
         <div className={clsx("mt-6 max-w-3xl text-xl text-neutral-600")}>

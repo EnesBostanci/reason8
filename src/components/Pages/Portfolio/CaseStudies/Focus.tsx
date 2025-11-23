@@ -1,20 +1,20 @@
-export default function Foucs() {
+export default function Foucs({ author, quote, imgUrl, title }) {
   return (
-    <section className="bg-white pt-24 pb-16 sm:pt-32 sm:pb-24 xl:pb-32 dark:bg-gray-900">
-      <div className="bg-gray-900 pb-20 sm:pb-24 xl:pb-0 dark:bg-gray-800/50 dark:outline dark:outline-white/5">
+    <section className="bg-white pt-24 pb-16 sm:pt-32 sm:pb-24 xl:pb-32 ">
+      <div className="bg-primary-800 pb-20 sm:pb-24 xl:pb-0  dark:outline dark:outline-white/5">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
           <div className="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
             <div className="relative aspect-2/1 h-full after:absolute after:inset-0 after:rounded-2xl after:inset-ring after:inset-ring-white/15 md:-mx-8 xl:mx-0 xl:aspect-auto">
               <img
                 alt=""
-                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+                src={imgUrl}
                 className="absolute inset-0 size-full rounded-2xl bg-gray-800 object-cover shadow-2xl dark:bg-gray-700 dark:shadow-none"
               />
             </div>
           </div>
           <div className="w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24">
             <figure className="relative isolate pt-6 sm:pt-12">
-              <svg
+              {/* <svg
                 fill="none"
                 viewBox="0 0 162 128"
                 aria-hidden="true"
@@ -25,20 +25,15 @@ export default function Foucs() {
                   id="b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb"
                 />
                 <use x={86} href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" />
-              </svg>
+              </svg> */}
               <blockquote className="text-xl/8 font-semibold text-white sm:text-2xl/9 dark:text-gray-100">
-                <p>
-                  Gravida quam mi erat tortor neque molestie. Auctor aliquet at
-                  porttitor a enim nunc suscipit tincidunt nunc. Et non lorem
-                  tortor posuere. Nunc eu scelerisque interdum eget tellus non
-                  nibh scelerisque bibendum.
-                </p>
+                <p>{quote}</p>
               </blockquote>
               <figcaption className="mt-8 text-base">
                 <div className="font-semibold text-white dark:text-gray-100">
-                  Judith Black
+                  {author}
                 </div>
-                <div className="mt-1 text-gray-400">CEO of Workcation</div>
+                <div className="mt-1 text-gray-400">{title}</div>
               </figcaption>
             </figure>
           </div>

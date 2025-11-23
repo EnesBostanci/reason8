@@ -13,9 +13,7 @@ export default function BentoGridHome() {
   return (
     <section className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-base/7 font-semibold text-neutral-950">
-          Our Work{" "}
-        </h2>
+        <h2 className="text-base/7 font-semibold text-neutral-950">Our Work</h2>
         <p className="mt-2 max-w-lg whitespace-nowrap text-4xl font-semibold tracking-tight text-pretty text-primary-800 sm:text-5xl">
           shape stories that captivate
         </p>
@@ -61,7 +59,7 @@ export default function BentoGridHome() {
                   Case Study
                 </h3>
                 <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">
-                  Abu Dhabi Media Network{" "}
+                  Abu Dhabi Media Network
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
                   News Programs Rebranding & VIZrt templates Strategic Overview

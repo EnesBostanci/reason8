@@ -1,10 +1,10 @@
 export default function Help() {
   return (
-    <section className="relative bg-white dark:bg-gray-900">
-      <div className="relative h-80 overflow-hidden bg-indigo-600 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
+    <section className="relative bg-primary-800">
+      <div className="relative h-80 overflow-hidden md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
         <img
           alt=""
-          src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply"
+          src="/studies/abudhabi/hero.png"
           className="size-full object-cover"
         />
         <svg
@@ -34,27 +34,21 @@ export default function Help() {
       </div>
       <div className="relative mx-auto max-w-7xl py-24 sm:py-32 lg:px-8 lg:py-40">
         <div className="pr-6 pl-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pr-0 lg:pl-24 xl:pl-32">
-          <h2 className="text-base/7 font-semibold text-primary-600 dark:text-indigo-400">
-            Award winning support
-          </h2>
           <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl dark:text-white">
-            We’re here to help
+            Client IN FOCUS
           </p>
           <p className="mt-6 text-base/7 text-gray-600 dark:text-gray-300">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
-            tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim
-            et fermentum, augue. Aliquet amet volutpat quisque ut interdum
-            tincidunt duis.
+            Abu Dhabi Media (ADM) is recognized as a premier multimedia
+            organization in the United Arab Emirates, showcasing a rich
+            diversity across broadcast, digital, and publishing platforms. This
+            case study illuminates ADM's forward-thinking initiative to rebrand
+            its news programs, embodying its dedication to producing content of
+            unparalleled quality that captivates audiences worldwide. This
+            rebranding initiative underscores ADM's strategic commitment to
+            innovation and excellence, aiming to elevate the global media
+            landscape while ensuring the delivery of engaging, high-quality
+            content across its extensive media footprint.
           </p>
-          <div className="mt-8">
-            <a
-              href="#"
-              className="inline-flex rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:shadow-none"
-            >
-              {" "}
-              Visit the help center{" "}
-            </a>
-          </div>
         </div>
       </div>
     </section>
