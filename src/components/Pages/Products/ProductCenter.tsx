@@ -3,7 +3,7 @@ export default function ProductCenter() {
     <section className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
-          <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-primary-800 sm:text-5xl sm:text-balance">
+          <p className="mt-2 text-4xl font-bold tracking-tight text-pretty text-primary-800 sm:text-5xl sm:text-balance">
             Results and impact{" "}
           </p>
           <p className="mt-6 text-lg/8 text-gray-600">

@@ -6,7 +6,7 @@ export default function Project() {
           <p className="text-base/7 font-semibold text-primary-600 dark:text-indigo-400">
             About us
           </p>
-          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty sm:text-5xl ">
+          <h1 className="mt-2 text-4xl font-bold tracking-tight text-pretty sm:text-5xl ">
             On a mission to empower remote teams
           </h1>
           <p className="mt-6 text-xl/8 text-balance text-gray-700 dark:text-gray-300">
@@ -17,7 +17,7 @@ export default function Project() {
         </div>
         <section className="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
           <div className="lg:pr-8">
-            <h2 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900 ">
+            <h2 className="text-2xl font-bold tracking-tight text-pretty text-gray-900 ">
               Our mission
             </h2>
             <p className="mt-6 text-base/7 text-gray-600 dark:text-gray-400">

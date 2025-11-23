@@ -5,7 +5,7 @@ export default function Global() {
     <section className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <div className="max-w-4xl">
-          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty sm:text-5xl">
+          <h1 className="mt-2 text-4xl font-bold tracking-tight text-pretty sm:text-5xl">
             Global Presence
           </h1>
           <p className="mt-6 text-xl/8 text-balance text-gray-700">

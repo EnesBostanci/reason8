@@ -39,7 +39,7 @@ export default function page() {
               <div key={id} className="flex items-center justify-center">
                 <Image
                   src={partner.logo}
-                  alt={partner.name}
+                  alt="Client logo"
                   width={158}
                   height={48}
                   className="max-h-12 w-full object-contain"

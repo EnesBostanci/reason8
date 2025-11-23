@@ -56,7 +56,7 @@ export default function CallToAction({ clasName }: { clasName?: string }) {
       </div>
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-md sm:text-center">
-          <h2 className="text-3xl font-medium tracking-tight text-white sm:text-3xl">
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-3xl">
             Step into a world where imagination meets intelligence, and every
             frame is designed to inspire and resonate.
           </h2>

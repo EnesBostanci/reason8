@@ -44,7 +44,7 @@ export default function Content({
           </div>
           <div className={`${data.dir ? "order-1" : "order-2"}`}>
             <div className="text-base/7 text-gray-700 lg:max-w-lg">
-              <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty  sm:text-5xl">
+              <h1 className="mt-2 text-4xl font-bold tracking-tight text-pretty  sm:text-5xl">
                 {data.category}
               </h1>
               <div className="max-w-xl">

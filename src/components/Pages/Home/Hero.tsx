@@ -67,6 +67,10 @@ export default function Hero() {
                   we build stories that resonate across platforms, cultures, and
                   continents.
                 </p>
+                <p className="mt-8 text-lg text-pretty text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
+                  Step into a world where imagination meets intelligence, and
+                  every frame is designed to inspire and resonate.
+                </p>
 
                 <div className="mt-10 flex items-center gap-x-6">
                   {/* <a

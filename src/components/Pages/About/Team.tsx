@@ -38,11 +38,11 @@ export default function Team() {
     <section className="bg-white py-24 md:py-32">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-20 px-6 lg:px-8 xl:grid-cols-5">
         <div className="max-w-2xl xl:col-span-2">
-          <h2 className="text-4xl font-semibold tracking-tight text-pretty text-primary-800 sm:text-5xl">
+          <h2 className="text-4xl font-bold tracking-tight text-pretty text-primary-800 sm:text-5xl">
             Leadership Team
           </h2>
           <p className="mt-6 text-lg/8 text-gray-600">
-            The minds shaping media’s future.
+            The minds shaping media’s future :
           </p>
         </div>
         <ul role="list" className="divide-y divide-gray-200 xl:col-span-3">

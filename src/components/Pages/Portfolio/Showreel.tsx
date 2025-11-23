@@ -65,7 +65,7 @@ export default function Showreel() {
                 </div>
                 {section.content.map((item, index) => (
                   <div key={index}>
-                    <h2 className="mt-6 text-xl font-semibold">{item.title}</h2>
+                    <h2 className="mt-6 text-xl font-bold">{item.title}</h2>
                     <p className="mt-2 text-base text-gray-500">{item.text}</p>
                   </div>
                 ))}

@@ -81,8 +81,7 @@ export function StatListItem({
 export default function Hero() {
   return (
     <section>
-      <PageIntro eyebrow="About us" title="Reson8 Media">
-        <p>Our Story</p>
+      <PageIntro eyebrow="About us" title="Our Story">
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>Pioneering Media Excellence. Powering the Future of Content.</p>
           <p>

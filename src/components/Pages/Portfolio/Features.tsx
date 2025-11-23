@@ -77,7 +77,7 @@ export default function Features() {
                 <TabPanel key={tab.name} className="space-y-16 pt-10 lg:pt-16">
                   {tab.features.map((feature) => (
                     <div key={feature.name} className="flex flex-col">
-                      <BentoGrid className="lg:px-0" />
+                      <BentoGrid />
                     </div>
                   ))}
                 </TabPanel>

@@ -45,16 +45,10 @@ export default function Services() {
   return (
     <>
       <SectionIntro
-        eyebrow="Our Services"
-        title="We help you identify, explore and respond to new opportunities."
+        eyebrow="OUR CREATIVE PROCESS"
+        title="Crafting brilliance, one frame at a time."
         className="mt-24 sm:mt-32 lg:mt-40"
-      >
-        <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects <br />
-          we can come up with an endless number of those.
-        </p>
-      </SectionIntro>
+      ></SectionIntro>
       <Container className="mt-16">
         <div className="lg:flex lg:items-center lg:justify-end relative">
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">

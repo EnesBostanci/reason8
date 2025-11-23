@@ -1,4 +1,14 @@
-export default function Foucs({ author, quote, imgUrl, title }) {
+export default function Foucs({
+  author,
+  quote,
+  imgUrl,
+  title,
+}: {
+  author: string;
+  quote: string;
+  imgUrl: string;
+  title: string;
+}) {
   return (
     <section className="bg-white pt-24 pb-16 sm:pt-32 sm:pb-24 xl:pb-32 ">
       <div className="bg-primary-800 pb-20 sm:pb-24 xl:pb-0  dark:outline dark:outline-white/5">

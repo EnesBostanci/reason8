@@ -44,7 +44,7 @@ export default function Clients() {
                     width={185}
                     height={36}
                     src={logo}
-                    alt={client}
+                    alt="Client logo"
                     unoptimized
                   />
                 </FadeIn>

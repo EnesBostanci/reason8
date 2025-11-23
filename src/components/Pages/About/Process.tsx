@@ -21,63 +21,63 @@ const creativeProcessFlat = [
     title: "Aligning minds. Setting the game plan.",
     description:
       "We sit with our clients to align objectives, expectations, and success outcomes — setting the stage for a seamless journey.",
-    bullet1: "Crystalizing objectives",
-    bullet2: "Setting expectations & deliverables",
-    bullet3: "Full stakeholder alignment",
+    bullet1: "- Crystalizing objectives",
+    bullet2: "- Setting expectations & deliverables",
+    bullet3: "- Full stakeholder alignment",
   },
   {
     name: "Strategy & Research",
     title: "Smart creativity powered by insight.",
     description:
       "We combine deep industry research with data-driven strategy to ensure every creative decision stands on solid ground.",
-    bullet1: "Market & audience insights",
-    bullet2: "Trend and competitive mapping",
-    bullet3: "Strategic integration into the creative plan",
+    bullet1: "- Market & audience insights",
+    bullet2: "- Trend and competitive mapping",
+    bullet3: "- Strategic integration into the creative plan",
   },
   {
     name: "Creative Development",
     title: "Igniting ideas. Sharpening visions.",
     description:
       "Every powerful story begins with a spark. Our teams collaborate to spark bold ideas, explore new angles, and shape concepts that truly resonate.",
-    bullet1: "Fresh concept generation",
-    bullet2: "Cross-team creative collaboration",
-    bullet3: "Defining the project’s creative direction",
+    bullet1: "- Fresh concept generation",
+    bullet2: "- Cross-team creative collaboration",
+    bullet3: "- Defining the project’s creative direction",
   },
   {
     name: "Moodboard & Storyboard",
     title: "Visualizing the emotion. Framing the story.",
     description:
       "Before anything comes to life, we paint the vision. From moodboards that set tone and style to storyboards that map every moment — we bring clarity to the creative roadmap.",
-    bullet1: "Defining tone, look, and feel",
-    bullet2: "Scene-by-scene narrative planning",
-    bullet3: "Visual previews of the final direction",
+    bullet1: "- Defining tone, look, and feel",
+    bullet2: "- Scene-by-scene narrative planning",
+    bullet3: "- Visual previews of the final direction",
   },
   {
     name: "Design & Animation",
     title: "Where imagination meets motion.",
     description:
       "Our designers and animators craft visuals that captivate — from cinematic motion graphics to immersive animations.",
-    bullet1: "High-impact graphics & illustration",
-    bullet2: "Dynamic animation production",
-    bullet3: "Seamless alignment with narrative",
+    bullet1: "- High-impact graphics & illustration",
+    bullet2: "- Dynamic animation production",
+    bullet3: "- Seamless alignment with narrative",
   },
   {
     name: "Integration & Post-Production",
     title: "Perfecting the masterpiece.",
     description:
       "Our post-production experts refine every pixel, sound, and sequence. From audio design to effects and editing, we ensure the final product is broadcast-ready and exceptional.",
-    bullet1: "Sound & audio design",
-    bullet2: "Visual effects and editing",
-    bullet3: "Rigorous quality assurance",
+    bullet1: "- Sound & audio design",
+    bullet2: "- Visual effects and editing",
+    bullet3: "- Rigorous quality assurance",
   },
   {
     name: "Delivery & Support",
     title: "Beyond delivery. We stay with you.",
     description:
       "Our partnership doesn’t end at handover. We support updates, refinements, and long-term optimization — ensuring your content continues to shine.",
-    bullet1: "Full content delivery",
-    bullet2: "Usage guidance & handover",
-    bullet3: "Ongoing support for updates",
+    bullet1: "- Full content delivery",
+    bullet2: "- Usage guidance & handover",
+    bullet3: "- Ongoing support for updates",
   },
 ];
 
@@ -141,13 +141,13 @@ function TestimonialCard({
         className="absolute inset-0 rounded-3xl bg-primary-800 ring-1 ring-gray-950/10 ring-inset sm:from-25%"
       />
       <figure className="relative h-full p-10 flex flex-col justify-between">
-        <blockquote className="flex-1">
-          <div className="relative text-white">{children}</div>
-        </blockquote>
-        <figcaption className="mt-6 border-t border-primary-100 pt-6">
+        <figcaption className="mb-6 border-b border-primary-100 pb-6">
           <p className="text-white">{name}</p>
           <p className="font-medium whitespace-nowrap text-white">{title}</p>
         </figcaption>
+        <blockquote className="flex-1">
+          <div className="relative text-white">{children}</div>
+        </blockquote>
       </figure>
     </motion.div>
   );
@@ -173,9 +173,9 @@ export function Process() {
     <div className="overflow-hidden py-32">
       <Container>
         <div ref={setReferenceWindowRef}>
-          <Subheading>Crafting brilliance, one frame at a time.</Subheading>
+          <Subheading> Creative Process</Subheading>
           <Heading as="h3" className="mt-2 text-primary-800">
-            Creative Process
+            Crafting brilliance, one frame at a time.
           </Heading>
         </div>
       </Container>
@@ -203,9 +203,9 @@ export function Process() {
             >
               <>
                 <p className="text-xl mb-5 ">{description}</p>
-                <p className="mt-2 text-base ">-{bullet1}</p>
-                <p className="mt-2 text-base ">-{bullet2}</p>
-                <p className="mt-2 text-base ">-{bullet3}</p>
+                <p className="mt-2 text-base ">{bullet1}</p>
+                <p className="mt-2 text-base ">{bullet2}</p>
+                <p className="mt-2 text-base ">{bullet3}</p>
               </>
             </TestimonialCard>
           )

@@ -56,45 +56,50 @@ export default function GetInTouch() {
                 />
               </div>
             </div>
-            <h2 className="text-4xl font-semibold tracking-tight text-pretty text-primary-800 sm:text-5xl">
-              Let’s Connect. Let’s Create.
+            <h2 className="text-4xl font-bold tracking-tight text-pretty text-primary-800 sm:text-5xl">
+              Let's Connect. Let's Create.
             </h2>
             <p className="mt-6 text-lg/8 text-primary-800">
               Have a project in mind? Want to explore new media possibilities?
               Our team is here to collaborate, guide, and support.
             </p>
             <dl className="mt-10 space-y-4 text-base/7 text-gray-600">
-              {/* <div className="flex gap-x-4">
+              <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Address</span>
                   <BuildingOffice2Icon
                     aria-hidden="true"
-                    className="h-7 w-6 text-gray-400"
+                    className="h-7 w-6 text-primary-800"
                   />
                 </dt>
                 <dd>
-                  545 Mavis Island
-                  <br />
-                  Chicago, IL 99191
+                  <strong>Canada :</strong> Ottawa
                 </dd>
-              </div> */}
-              {/* <div className="flex gap-x-4">
+              </div>
+              <div className="flex gap-x-4">
                 <dt className="flex-none">
-                  <span className="sr-only">Telephone</span>
-                  <PhoneIcon
+                  <span className="sr-only">Address</span>
+                  <BuildingOffice2Icon
                     aria-hidden="true"
-                    className="h-7 w-6 text-gray-400"
+                    className="h-7 w-6 text-primary-800"
                   />
                 </dt>
                 <dd>
-                  <a
-                    href="tel:+1 (555) 234-5678"
-                    className="hover:text-gray-900"
-                  >
-                    +1 (555) 234-5678
-                  </a>
+                  <strong>Middle East :</strong> Doha
                 </dd>
-              </div> */}
+              </div>
+              <div className="flex gap-x-4">
+                <dt className="flex-none">
+                  <span className="sr-only">Address</span>
+                  <BuildingOffice2Icon
+                    aria-hidden="true"
+                    className="h-7 w-6 text-primary-800"
+                  />
+                </dt>
+                <dd>
+                  <strong>Europe :</strong> Istanbul
+                </dd>
+              </div>
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Email</span>

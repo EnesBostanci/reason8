@@ -19,7 +19,7 @@ export default function Art() {
             <h2 className="text-base/8 font-semibold text-primary-600 dark:text-indigo-400">
               Our track record
             </h2>
-            <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white">
+            <p className="mt-2 text-4xl font-bold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white">
               Trusted by thousands of creators worldwide
             </p>
             <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-300">

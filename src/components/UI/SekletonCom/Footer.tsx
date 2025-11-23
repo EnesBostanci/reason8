@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const navigation = [
   {
-    title: "Work",
+    title: "Success Stories",
     links: [
       { title: "Shams", href: "/shams" },
       { title: "Shams Studio", href: "/studio" },
@@ -22,8 +22,9 @@ const navigation = [
       },
     ],
   },
+
   {
-    title: "Company",
+    title: "About Us",
     links: [
       { title: "About Us", href: "/aboutus" },
       { title: "Services", href: "/services" },
@@ -32,7 +33,7 @@ const navigation = [
     ],
   },
   {
-    title: "Connect",
+    title: "Let’s Connect",
     links: socialMediaProfiles,
   },
 ];
@@ -92,7 +93,7 @@ export function Footer() {
             />
           </Link>
           <p className="text-sm text-neutral-700">
-            © Reason8 Media Inc. {new Date().getFullYear()}
+            © RESON8 Media Inc. {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>
