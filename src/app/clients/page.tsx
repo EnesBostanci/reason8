@@ -6,8 +6,8 @@ import Clients from "@/components/Pages/Home/Clients";
 import Image from "next/image";
 
 const clients = {
-  title: "OUR CLIENTS",
-  header: "Those Who Trust Us to Tell Their Stories",
+  title: "Those Who Trust Us to Tell Their Stories",
+  header: "OUR CLIENTS",
   description:
     "We partner with broadcasters, brands, and creators who value bold ideas and exceptional storytelling — delivering work that resonates across industries and audiences.",
 };
@@ -22,8 +22,8 @@ const partners = [
 ];
 
 const partnersTitle = {
-  title: "OUR PARTNERS",
-  header: "Creating More, Together",
+  title: "Creating More, Together",
+  header: "OUR PARTNERS",
   description:
     "We collaborate with leading technology and creative partners to elevate our capabilities and deliver world-class media solutions.",
 };

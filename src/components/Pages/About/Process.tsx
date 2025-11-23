@@ -134,16 +134,16 @@ function TestimonialCard({
       ref={ref}
       style={{ opacity }}
       {...props}
-      className="relative flex aspect-9/16 w-72 shrink-0 snap-start scroll-ml-(--scroll-padding) flex-col justify-end overflow-hidden rounded-3xl sm:aspect-3/4 sm:w-96"
+      className="relative flex aspect-9/16 w-80 shrink-0 snap-start scroll-ml-(--scroll-padding) flex-col justify-end overflow-hidden rounded-3xl sm:aspect-3/4 sm:w-100"
     >
       <div
         aria-hidden="true"
         className="absolute inset-0 rounded-3xl bg-primary-800 ring-1 ring-gray-950/10 ring-inset sm:from-25%"
       />
       <figure className="relative h-full p-10 flex flex-col justify-between">
-        <figcaption className="mb-6 border-b border-primary-100 pb-6">
-          <p className="text-white">{name}</p>
-          <p className="font-medium whitespace-nowrap text-white">{title}</p>
+        <figcaption className="mb-3 sm:mb-6 border-b border-primary-100 pb-6">
+          <p className="text-white font-bold sm:text-2xl mb-2 ">{name}</p>
+          <p className="font-medium  text-white">{title}</p>
         </figcaption>
         <blockquote className="flex-1">
           <div className="relative text-white">{children}</div>
@@ -173,9 +173,9 @@ export function Process() {
     <div className="overflow-hidden py-32">
       <Container>
         <div ref={setReferenceWindowRef}>
-          <Subheading> Creative Process</Subheading>
+          <Subheading> Crafting brilliance, one frame at a time.</Subheading>
           <Heading as="h3" className="mt-2 text-primary-800">
-            Crafting brilliance, one frame at a time.
+            Creative Process
           </Heading>
         </div>
       </Container>
@@ -202,10 +202,10 @@ export function Process() {
               onClick={() => scrollTo(testimonialIndex)}
             >
               <>
-                <p className="text-xl mb-5 ">{description}</p>
-                <p className="mt-2 text-base ">{bullet1}</p>
-                <p className="mt-2 text-base ">{bullet2}</p>
-                <p className="mt-2 text-base ">{bullet3}</p>
+                <p className="mb-3 sm:text-xl sm:mb-5 ">{description}</p>
+                <p className="mt-2  ">{bullet1}</p>
+                <p className="mt-2  ">{bullet2}</p>
+                <p className="mt-2  ">{bullet3}</p>
               </>
             </TestimonialCard>
           )

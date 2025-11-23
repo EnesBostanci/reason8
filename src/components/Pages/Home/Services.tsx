@@ -45,8 +45,8 @@ export default function Services() {
   return (
     <>
       <SectionIntro
-        eyebrow="OUR CREATIVE PROCESS"
-        title="Crafting brilliance, one frame at a time."
+        eyebrow="Crafting brilliance, one frame at a time."
+        title="OUR CREATIVE PROCESS"
         className="mt-24 sm:mt-32 lg:mt-40"
       ></SectionIntro>
       <Container className="mt-16">
@@ -60,7 +60,7 @@ export default function Services() {
               />
             </FadeIn>
           </div>
-          <div className="flex md:flex-col">
+          <div className="flex flex-col">
             <List className="mt-16 lg:mt-0 lg:pl-4">
               {services.map((l, id) => (
                 <ListItem
@@ -74,7 +74,7 @@ export default function Services() {
               ))}
             </List>
 
-            <Button className="mt-20 w-fit self-end " href="/services" invert>
+            <Button className="mt-20 w-fit self-end" href="/services" invert>
               Explore More
             </Button>
           </div>

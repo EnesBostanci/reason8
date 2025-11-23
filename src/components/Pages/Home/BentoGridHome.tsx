@@ -13,9 +13,12 @@ export default function BentoGridHome() {
   return (
     <section className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-base/7 font-semibold text-neutral-950">Our Work</h2>
-        <p className="mt-2 max-w-lg whitespace-nowrap text-4xl font-bold tracking-tight text-pretty text-primary-800 sm:text-5xl">
+        <h2 className="text-base/7 font-semibold text-neutral-950">
+          {" "}
           shape stories that captivate
+        </h2>
+        <p className="mt-2 max-w-lg whitespace-nowrap text-4xl font-bold tracking-tight text-pretty text-primary-800 sm:text-5xl">
+          Our Work
         </p>
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           <Link

@@ -12,14 +12,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import { motion, MotionConfig, useReducedMotion } from "framer-motion";
-
-import { Button } from "@/components/UI/SekletonCom/Button";
-
 import { Container } from "@/components/UI/SekletonCom/Container";
 import { Footer } from "@/components/UI/SekletonCom/Footer";
 import { GridPattern } from "@/components/UI/SekletonCom/GridPattern";
 // import { Logo, Logomark } from '@/components/UI/SekletonCom/Logo'
-import { Offices } from "@/components/UI/SekletonCom/Offices";
 import { SocialMedia } from "@/components/UI/SekletonCom/SocialMedia";
 import Image from "next/image";
 
@@ -89,12 +85,6 @@ function Header({
           />
         </Link>
         <div className="flex items-center gap-x-8">
-          {expanded && (
-            <Button href="/contact" invert={invert}>
-              Contact us
-            </Button>
-          )}
-
           <button
             ref={toggleRef}
             type="button"
@@ -120,9 +110,15 @@ function Header({
   );
 }
 
-function NavigationRow({ children }: { children: React.ReactNode }) {
+function NavigationRow({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
   return (
-    <div className="even:mt-px sm:bg-primary-800">
+    <div className={`even:mt-px sm:bg-primary-800 ${className}`}>
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2">{children}</div>
       </Container>
@@ -159,6 +155,9 @@ function Navigation() {
       <NavigationRow>
         <NavigationItem href="/portfolio">Our Work</NavigationItem>
         <NavigationItem href="/clients">Partners & Clients</NavigationItem>
+      </NavigationRow>
+      <NavigationRow className="mt-px">
+        <NavigationItem href="/contact">Contact us</NavigationItem>
       </NavigationRow>
     </nav>
   );

@@ -2,7 +2,7 @@ export default function Logo() {
   return (
     <section className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-center text-5xl/8 font-bold text-primary-800">
+        <h2 className="text-center text-5xl/8 font-bold text-primary-800 leading-normal">
           Part of The 8 Group
         </h2>
         <div className="h-px mt-10 w-full bg-gray-400" />

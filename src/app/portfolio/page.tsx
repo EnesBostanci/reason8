@@ -5,8 +5,8 @@ import Clients from "@/components/Pages/Home/Clients";
 import Features from "@/components/Pages/Portfolio/Features";
 import Hero from "@/components/Layout/Hero";
 const heroTitle = {
-  title: "OUR WORK ",
-  header: "Where Ideas Become Impact",
+  title: "Where Ideas Become Impact",
+  header: "OUR WORK",
   description:
     "From channel branding to immersive experiences, our work blends creativity and technology to shape stories that captivate, inspire, and perform.",
 };

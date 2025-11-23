@@ -22,8 +22,8 @@ export default function page() {
     <Sekleton grid={true}>
       <Hero />
       <Culture
-        title="Core Values"
-        tagline="The Core Beat: What Drives Us Forward"
+        title="The Core Beat: What Drives Us Forward"
+        tagline="Core Values"
         data={coreValues}
       />
       <Vision />
